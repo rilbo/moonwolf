@@ -1,1 +1,7 @@
 @import "libs/reset.scss";
+@import "libs/flex.scss";
+@import "libs/size.scss";
+
+section{
+    @include flex(center);
+}
