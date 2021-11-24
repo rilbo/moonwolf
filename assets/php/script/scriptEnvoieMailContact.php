@@ -27,7 +27,7 @@ $mail = new PHPMailer(true);
 try {
   //Server settings
   $mail->isSMTP();
-  $mail->Host       = 'smtp.gmail.com';
+  $mail->Host       = 'smtp-moonwolf.alwaysdata.net';
   $mail->SMTPAuth   = true;
   $mail->Username   = $_SERVER['ADRESSE_MAIL'];
   $mail->Password   = $_SERVER['MDP_MAIL'];
@@ -35,8 +35,8 @@ try {
   $mail->Port       = 465;
 
   //Recipients
-  $mail->setFrom($_SERVER['ADRESSE_MAIL'], 'Formulaire de contact de Premier Pas');
-  $mail->addAddress($_SERVER['ADRESSE_MAIL']);
+  $mail->setFrom("tristanfpv@gmail.com", 'Formulaire de contact de Premier Pas');
+  $mail->addAddress("tristanfpv@gmail.com");
   $mail->addReplyTo($mailUser, $objet);
 
   //Content
@@ -44,7 +44,6 @@ try {
   $mail->Subject = "FORMULAIRE DE CONTACT PREMIER PAS - ".$objet;
   $mail->Body    =
 '
-
 <div id="mail" style="width: 100%;max-width: 600px;background-color: oldlace;margin: 50px auto;">
 <div class="banner" style="height: 100px;width: 100%;background-color: mediumseagreen;display: flex;justify-content: center;align-items: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">
   <img src="https://static.vecteezy.com/system/resources/previews/001/191/736/non_2x/circle-logo-png.png" alt="logo" style="margin: auto;height: 80%;text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">
