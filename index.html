@@ -1,30 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Moonwolf</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js"></script>
-</head>
-<body>
-  <h1>Moonwolf</h1>
-  <form action="assets/php/script/scriptEnvoieMailContact.php" method="post">
-    <h2>Envoyer un mail</h2>
+  <head>
+    <meta charset="utf-8" />
+    <title>Moonwolf</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <section id="div__offres">
+      <h2>Nos offres</h2>
+      <div class="container__diapo">
+        <div class="div__nav_slider div__nav_slider--left"><span><</span></div>
+        <div class="diapo__item">
+          <img
+            src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_8722-edit.jpg"
+            alt="portrait1"
+          />
+        </div>
+        <div class="diapo__item">
+          <img
+            src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_2669-edit.jpg"
+            alt="portrait2"
+          />
+        </div>
+        <div class="diapo__item">
+          <img
+            src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_4206-edit.jpg"
+            alt="portrait3"
+          />
+        </div>
+        <div class="div__nav_slider div__nav_slider--right"><span>></span></div>
+      </div>
+      <a href="#">Découvrir</a>
+    </section>
+    <script>
+      function switchDiapo(sens = "left") {
+        let container = document.querySelector(".container__diapo");
+        let slide1 = container.querySelector(".diapo__item:nth-child(2)");
+        let slide2 = container.querySelector(".diapo__item:nth-child(3)");
+        let slide3 = container.querySelector(".diapo__item:nth-child(4)");
 
-    <label for="mail">Adresse mail</label>
-    <input type="text" name="mail" id="mail" />
+        if (sens == "left") {
+          slide1.before(slide3);
+        } else {
+          slide3.after(slide1);
+        }
+      }
 
-    <label for="objet">Objet</label>
-    <input type="text" name="objet" id="objet" list="list-objet">
-    <datalist id="list-objet">
-      <option value="Demande de devis" />
-      <option value="Demande de renseignement" />
-    </datalist>
-
-    <label for="message">Corps du message</label>
-    <textarea name="message" id="message" rows="10"></textarea>
-
-    <input type="submit" value="Se connecter" />
-  </form>
-</body>
+      window.onload = () => {
+        let slider = document.querySelector("#div__offres .div__nav_slider")
+        if (slider) {
+          document
+            .querySelector(
+              "#div__offres .div__nav_slider--left"
+            )
+            .addEventListener("click", function () {
+              switchDiapo("left");
+            });
+          document
+            .querySelector(
+              "#div__offres .div__nav_slider--right"
+            )
+            .addEventListener("click", function () {
+              switchDiapo("right");
+            });
+        }
+      };
+    </script>
+  </body>
 </html>
