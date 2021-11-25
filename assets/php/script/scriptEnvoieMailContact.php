@@ -7,9 +7,15 @@ if (
   header('Location: /');
 }
 
+// Champs obligatoires
 $objet = htmlspecialchars(strip_tags($_POST['objet']));
 $mailUser = htmlspecialchars(strip_tags($_POST['mail']));
 $message = htmlspecialchars(strip_tags($_POST['message']));
+
+// Champs optionnels
+$nom = isset($_POST['nom']) && htmlspecialchars(strip_tags($_POST['nom'])) != '' ? htmlspecialchars(strip_tags($_POST['nom'])) : 'Non renseigné';
+$prenom = isset($_POST['prenom']) && htmlspecialchars(strip_tags($_POST['prenom'])) != '' ? htmlspecialchars(strip_tags($_POST['prenom'])) : 'Non renseigné';
+$numero = isset($_POST['numero']) && htmlspecialchars(strip_tags($_POST['numero'])) != '' ? htmlspecialchars(strip_tags($_POST['numero'])) : 'Non renseigné';
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/assets/php/config.php';
 
@@ -53,6 +59,9 @@ try {
   <h1 style="text-align: center;font-weight: bold;font-size: 1.2em;margin-bottom: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;">Formulaire de contact de Premier Pas</h1>
   <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Objet :</span> '.$objet.'</p>
   <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Auteur :</span> '.$mailUser.'</p>
+  <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Nom :</span> '.$nom.'</p>
+  <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Prénom :</span> '.$prenom.'</p>
+  <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Numéro :</span> '.$numero.'</p>
   <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Message :</span></p>
   <pre style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
 '.$message.'
