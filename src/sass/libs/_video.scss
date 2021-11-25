@@ -1,0 +1,14 @@
+#div__video {
+  padding: 50px;
+  height: 600px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  video {
+    width: 75%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
