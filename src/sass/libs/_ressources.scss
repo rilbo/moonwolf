@@ -1,0 +1,35 @@
+* {
+  font-family: $montserrat;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+#div__ressources {
+  background-color: #346751;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+
+  a {
+    color: white;
+    padding: 10px 30px;
+    background-color: #C84B31;
+    border-radius: 15px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: row;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
