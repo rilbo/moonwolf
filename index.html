@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Moonwolf</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="src/sass/style.css">
   <script src="assets/js/main.js"></script>
 </head>
 <body>
@@ -80,8 +80,41 @@
     <h2>Nos ressources</h2>
     <a href="#">Télécharger les fichiers</a>
   </section>
+   <article id="valeur" class="flex justify-content-between">
+      <div class="flex column align-center">
+         <p>Ambition</p>
+         <figure>
+            <img src="assets/img/Ambition.png" alt="">
+         </figure>
+         <p>Notre objectif est de rendre possible un équilibre de genre dans l'entrepreneuriat</p>
+      </div>
 
-  <footer>
+      <div class="flex column align-center">
+         <p>Valoriser</p>
+         <figure>
+         <img src="assets/img/Valoriser.png" alt="">
+         </figure>
+         <p>Nous valorisons les femmes car elles aussi ont des idées à défendre.</p>
+      </div>
+
+      <div class="flex column align-center">
+         <p>Soutenir</p>
+         <figure>
+         <img src="assets/img/Soutenir.png" alt="">
+         </figure>
+         <p>Nous soutenons les femmes qui veulent entreprendre malgré les inégalités.</p>
+      </div>
+
+      <div class="flex column align-center">
+         <p>Accompagner</p>
+         <figure>
+         <img src="assets/img/Accompagner.png" alt="">
+         </figure>
+         <p>Nous accompagnons les femmes dans leurs projets, de la création au développement de leur société.</p>
+      </div>
+   </article >
+
+   <footer>
     <div class="nav-footer-links">
       <div>
         <a href="#">lorem</a>
@@ -110,25 +143,8 @@
   </footer>
 
 
-
-
-
-
-
-
-
   <form style="display: none;" action="assets/php/script/scriptEnvoieMailContact.php" method="post">
     <h2>Envoyer un mail</h2>
-
-    <label for="mail">Adresse mail</label>
-    <input type="text" name="mail" id="mail" />
-
-    <label for="objet">Objet</label>
-    <input type="text" name="objet" id="objet" list="list-objet">
-    <datalist id="list-objet">
-      <option value="Demande de devis" />
-      <option value="Demande de renseignement" />
-    </datalist>
 
     <label for="message">Corps du message</label>
     <textarea name="message" id="message" rows="10"></textarea>

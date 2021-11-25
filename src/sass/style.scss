@@ -3,6 +3,7 @@
 @import "libs/variable.scss";
 @import "libs/_reset.scss";
 @import "libs/_basics.scss";
+@import "libs/ressources";
 @import "mixins/_flex.scss";
 
 header{
@@ -407,4 +408,47 @@ body{
 
 }
 
-@import "libs/ressources";
+
+
+#valeur{
+    margin-top: 88px;
+    margin-left: 38px;
+    margin-right: 37px;
+    div{
+        width: 294px;
+        p{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 28px;
+            text-align: center;
+            &:first-child{
+                font-size: 36px;
+            }
+            &:last-child{
+                font-size: 24px;
+            }
+        }
+        figure{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #346751;
+            margin-top:29px;
+            margin-bottom:31px;
+            width: 182px;
+            height: 182px;
+            object-fit:cover;
+            border-radius:50%;
+           
+            img{
+                text-align: center;
+               
+            }
+        }
+        
+    }
+    
+
+}
+
