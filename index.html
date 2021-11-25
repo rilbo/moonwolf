@@ -20,30 +20,86 @@
           <li><a href="#">Actualités</a></li>
         </ul>
         <div class="container__social">
-          <a href="#"><img src="assets/img/logo_facebook.png" alt="facebook"></a>
-          <a href="#"><img src="assets/img/logo_instagram.png" alt="instagram"></a>
-          <a href="#"><img src="assets/img/logo_linkedin.png" alt="linkedin"></a>
+          <a href="#"
+            ><img src="assets/img/logo_facebook.png" alt="facebook"
+          /></a>
+          <a href="#"
+            ><img src="assets/img/logo_instagram.png" alt="instagram"
+          /></a>
+          <a href="#"
+            ><img src="assets/img/logo_linkedin.png" alt="linkedin"
+          /></a>
         </div>
       </nav>
       <div id="div__first_view">
         <h1>Premier pas</h1>
-        <hr>
+        <hr />
         <span class="first_view__baseline">Explication de la page</span>
       </div>
     </header>
+    <section id="div__valeurs">
+      <div class="container__valeurs">
+        <div class="valeur__item">
+          <span>Ambition</span>
+          <div class="container__image--valeurs">
+            <img src="assets/img/Ambition.png" alt="ambition" />
+          </div>
+          <p>
+            Notre objectif est de rendre possible un équilibre de genre dans
+            l'entrepreneuriat
+          </p>
+        </div>
+        <div class="valeur__item">
+          <span>Valoriser</span>
+          <div class="container__image--valeurs">
+            <img src="assets/img/Valoriser.png" alt="valoriser" />
+          </div>
+          <p>
+            Nous valorisons les femmes car elles aussi ont des idées à défendre
+          </p>
+        </div>
+        <div class="valeur__item">
+          <span>Soutenir</span>
+          <div class="container__image--valeurs">
+            <img src="assets/img/Soutenir.png" alt="soutenir" />
+          </div>
+          <p>
+            Nous soutenous les femmes qui veulent entreprendre malgré les inégalités
+          </p>
+        </div>
+        <div class="valeur__item">
+          <span>Accompagner</span>
+          <div class="container__image--valeurs">
+            <img src="assets/img/Accompagner.png" alt="accompagner" />
+          </div>
+          <p>
+            Nous accompagnons les femmes dans leurs projets, de la création au développement de leur société
+          </p>
+        </div>
+      </div>
+    </section>
     <section id="div__temoignages">
       <h2>Témoignages</h2>
       <div class="temoignages__global--mobile">
         <div class="div__nav_slider div__nav_slider--left"><span><</span></div>
         <div class="temoignages__container">
           <div class="temoignages__item">
-            <img src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_8722-edit.jpg" alt="temoignage">
+            <img
+              src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_8722-edit.jpg"
+              alt="temoignage"
+            />
           </div>
           <div class="temoignages__item">
-            <img src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_2669-edit.jpg" alt="temoignage">
+            <img
+              src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_2669-edit.jpg"
+              alt="temoignage"
+            />
           </div>
           <div class="temoignages__item">
-            <img src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_4206-edit.jpg" alt="temoignage">
+            <img
+              src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_4206-edit.jpg"
+              alt="temoignage"
+            />
           </div>
         </div>
         <div class="div__nav_slider div__nav_slider--right"><span>></span></div>
@@ -59,20 +115,20 @@
         <div class="div__nav_slider div__nav_slider--left"><span><</span></div>
         <div class="diapo__item">
           <img
-          src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_8722-edit.jpg"
-          alt="portrait1"
+            src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_8722-edit.jpg"
+            alt="portrait1"
           />
         </div>
         <div class="diapo__item">
           <img
-          src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_2669-edit.jpg"
-          alt="portrait2"
+            src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_2669-edit.jpg"
+            alt="portrait2"
           />
         </div>
         <div class="diapo__item">
           <img
-          src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_4206-edit.jpg"
-          alt="portrait3"
+            src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_4206-edit.jpg"
+            alt="portrait3"
           />
         </div>
         <div class="div__nav_slider div__nav_slider--right"><span>></span></div>
@@ -125,17 +181,19 @@
     </section>
     <script>
       function moveSlider(sens) {
-        let sliderContainer = document.querySelector("#div__temoignages .temoignages__container")
-        let slideWidth = sliderContainer.offsetWidth
-        let currentScroll = sliderContainer.scrollLeft
-  
+        let sliderContainer = document.querySelector(
+          "#div__temoignages .temoignages__container"
+        );
+        let slideWidth = sliderContainer.offsetWidth;
+        let currentScroll = sliderContainer.scrollLeft;
+
         if (sens == "left") {
-          sliderContainer.scroll(currentScroll-slideWidth-4, 0)
+          sliderContainer.scroll(currentScroll - slideWidth - 4, 0);
         } else {
-          sliderContainer.scroll(currentScroll+slideWidth+4, 0)
+          sliderContainer.scroll(currentScroll + slideWidth + 4, 0);
         }
       }
-      
+
       function switchDiapo(sens = "left") {
         let container = document.querySelector(".container__diapo");
         let slide1 = container.querySelector(".diapo__item:nth-child(2)");
@@ -150,29 +208,37 @@
       }
 
       window.onload = () => {
-        let sliderTemoignages = document.querySelector("#div__temoignages .temoignages__container")
+        let sliderTemoignages = document.querySelector(
+          "#div__temoignages .temoignages__container"
+        );
         if (sliderTemoignages) {
-          document.querySelector(".temoignages__global--mobile .div__nav_slider--left").addEventListener("click", function(){
-            moveSlider("left")
-          })
-          document.querySelector(".temoignages__global--mobile .div__nav_slider--right").addEventListener("click", function(){
-            moveSlider("right")
-          })
-        }
-
-        let sliderOffres = document.querySelector("#div__offres .div__nav_slider")
-        if (sliderOffres) {
           document
             .querySelector(
-              "#div__offres .div__nav_slider--left"
+              ".temoignages__global--mobile .div__nav_slider--left"
             )
+            .addEventListener("click", function () {
+              moveSlider("left");
+            });
+          document
+            .querySelector(
+              ".temoignages__global--mobile .div__nav_slider--right"
+            )
+            .addEventListener("click", function () {
+              moveSlider("right");
+            });
+        }
+
+        let sliderOffres = document.querySelector(
+          "#div__offres .div__nav_slider"
+        );
+        if (sliderOffres) {
+          document
+            .querySelector("#div__offres .div__nav_slider--left")
             .addEventListener("click", function () {
               switchDiapo("left");
             });
           document
-            .querySelector(
-              "#div__offres .div__nav_slider--right"
-            )
+            .querySelector("#div__offres .div__nav_slider--right")
             .addEventListener("click", function () {
               switchDiapo("right");
             });
