@@ -51,7 +51,7 @@ header{
                 width:40px;
                 height: 40px;
                 background:$secondary-color;
-                border-radius: 10px;
+                border-radius: 15px;
                 }
                 
             }
@@ -155,6 +155,9 @@ header{
 }
 
 body{
+    *{
+        font-family:$lato;
+    }
     section.banner{
         .img-back{
             width:100vw;
@@ -175,17 +178,16 @@ body{
     }
 
     section.commentaire{
-        > div{
             background-color:$secondary-color;
             width:100vw;
             >div{
                 padding:60px;
-            .com-title{
-                h3{
-                    font-size:40px;
-                    color:white;
+                .com-title{
+                    h3{
+                        font-size:40px;
+                        color:white;
+                    }
                 }
-            }
             .com-citations{
                 >div{
                     p{
@@ -207,15 +209,15 @@ body{
                     font-size:24px;
                     padding:10px 80px;
                     background-color:$main-color;
-                    border-radius: 10px;
+                    border-radius: 15px;
                     border: none;
                 }
             }
-            }
         }
+        
 
         @media screen and (min-width : 768px) and (max-width : 1024px) {
-            > div{
+            
                 >div{
                     
                 .com-title{
@@ -243,11 +245,11 @@ body{
                     }
                 }
                 }
-            }
+            
         }
     
         @media screen and (max-width : 500px) {
-            > div{
+            
                 >div{
                     
                 .com-title{
@@ -278,7 +280,7 @@ body{
                     }
                 }
                 }
-            }
+            
         } 
         
     }
@@ -403,6 +405,5 @@ body{
 
     }
 
-    
 }
 
