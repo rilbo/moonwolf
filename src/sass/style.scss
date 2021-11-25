@@ -5,3 +5,44 @@
 section{
     @include flex(center);
 }
+
+#newsletter{
+    #mc_embed_signup{
+        background:#346751; 
+        clear:left; 
+        color: #fff;
+        padding-top: 32px;
+        padding-bottom: 137px;
+        h2{
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        section{
+            height: 0px;
+            .mc-field-group{
+                label{
+                    font-size: 36px;
+                    margin-right: 18px;
+                }
+            }
+
+            #mce-EMAIL{
+                width: 583px;
+                height: 48px;
+                border-radius:5px;
+                margin-bottom: 5px;
+            }
+            .button{
+                background-color: #C84B31;
+                width: 272px;
+                height: 48px;
+                border-radius:15px;
+                margin-left: 73px;
+                color: white;
+                font-size: 24px;
+            }
+        }
+        
+    }
+}
