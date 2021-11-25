@@ -6,5 +6,4 @@
 *.css
 .DS_Store
 /vendor
-composer.phar
 .env
