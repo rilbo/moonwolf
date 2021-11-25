@@ -7,24 +7,48 @@
   <script src="assets/js/main.js"></script>
 </head>
 <body>
-  <h1>Moonwolf</h1>
-  <form action="assets/php/script/scriptEnvoieMailContact.php" method="post">
-    <h2>Envoyer un mail</h2>
+  <section id="div__temoignages">
+    <h2>Témoignages</h2>
+    <div class="temoignages__global--mobile">
+      <div class="div__nav_slider div__nav_slider--left"><span><</span></div>
+      <div class="temoignages__container">
+        <div class="temoignages__item">
+          <img src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_8722-edit.jpg" alt="temoignage">
+        </div>
+        <div class="temoignages__item">
+          <img src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_2669-edit.jpg" alt="temoignage">
+        </div>
+        <div class="temoignages__item">
+          <img src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_4206-edit.jpg" alt="temoignage">
+        </div>
+      </div>
+      <div class="div__nav_slider div__nav_slider--right"><span>></span></div>
+    </div>
+  </section>
+  <script>
+    function moveSlider(sens) {
+      let sliderContainer = document.querySelector("#div__temoignages .temoignages__container")
+      let slideWidth = sliderContainer.offsetWidth
+      let currentScroll = sliderContainer.scrollLeft
 
-    <label for="mail">Adresse mail</label>
-    <input type="text" name="mail" id="mail" />
+      if (sens == "left") {
+        sliderContainer.scroll(currentScroll-slideWidth-4, 0)
+      } else {
+        sliderContainer.scroll(currentScroll+slideWidth+4, 0)
+      }
+    }
 
-    <label for="objet">Objet</label>
-    <input type="text" name="objet" id="objet" list="list-objet">
-    <datalist id="list-objet">
-      <option value="Demande de devis" />
-      <option value="Demande de renseignement" />
-    </datalist>
-
-    <label for="message">Corps du message</label>
-    <textarea name="message" id="message" rows="10"></textarea>
-
-    <input type="submit" value="Se connecter" />
-  </form>
+    window.onload = () => {
+      let slider = document.querySelector("#div__temoignages .temoignages__container")
+      if (slider) {
+        document.querySelector(".temoignages__global--mobile .div__nav_slider--left").addEventListener("click", function(){
+          moveSlider("left")
+        })
+        document.querySelector(".temoignages__global--mobile .div__nav_slider--right").addEventListener("click", function(){
+          moveSlider("right")
+        })
+      }
+    }
+  </script>
 </body>
 </html>
