@@ -1,6 +1,6 @@
 header {
   nav {
-    padding: 10px;
+    padding: 10px 30px;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -9,8 +9,12 @@ header {
     position: absolute;
     width: 100%;
     top: 0px;
-  
-    .header__logo {
+
+    #nav-check, .nav-btn{
+      display: none;
+    }
+
+    .nav-logo {
       background-color: $dark-grey;
       color: white;
       display: grid;
@@ -18,7 +22,7 @@ header {
       padding: 8px 30px;
     }
 
-    .header__menu {
+    .nav-links{
       display: flex;
       align-items: center;
       gap: 0px 5%;
@@ -28,16 +32,82 @@ header {
       }
     }
 
-    .container__social {
+    .nav-icons{
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 0px 20px;
-
+      a{
+        height:30px;
+      }
       img {
         width: 30px;
       }
     }
+
+    @media screen and (max-width : 500px) {
+      #nav-check{
+          &:checked ~ .nav-btn > label{
+              & >span:nth-child(2){
+                  display: none;
+              }
+              & >span:nth-child(1){
+                  transform: rotate(45deg) translate(0px, 11px);
+              }
+              & >span:nth-child(3){
+                  transform: rotate(-45deg) translate(0px, -3px);
+              }
+          }
+          &:not(:checked) ~ .nav-links {
+              height: 0px;
+          }
+          &:checked ~ .nav-links {
+              height: calc(60vh - 60px);
+              overflow-y: auto;
+          }
+      }
+      > .nav-btn{
+          display: block;
+          position: absolute;
+          right: 20px;
+          top:0px;
+          & > label{
+              width: 50px;
+              height: 50px;
+              padding: 13px;
+              & > span{
+                  display: block;
+                  height: 10px;
+                  border-top: 2px solid $secondary-color;
+              }
+          }
+      }
+      > .nav-logo{
+          span{
+              font-size:0.75rem;
+          }
+      }
+      > .nav-links{
+          position: absolute;
+          width: 100%;
+          background-color: $main-color;
+          height: 0px;
+          overflow-y: hidden;
+          top: 60px;
+          left: 0px;
+          flex-direction: column;
+            a{
+                font-size:1rem;
+                width: 100%;
+            }
+          
+      }
+      > .nav-icons{
+          justify-content:initial;
+          margin-right: 40px;
+      }
+    } 
+
   }
 
   #div__first_view {
@@ -60,5 +130,7 @@ header {
       color: white;
       font-size: 1.5em;
     }
+
+    
   }
 }
