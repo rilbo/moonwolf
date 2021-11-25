@@ -7,6 +7,24 @@
     <script src="assets/js/main.js"></script>
   </head>
   <body>
+    <section id="div__temoignages">
+      <h2>Témoignages</h2>
+      <div class="temoignages__global--mobile">
+        <div class="div__nav_slider div__nav_slider--left"><span><</span></div>
+        <div class="temoignages__container">
+          <div class="temoignages__item">
+            <img src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_8722-edit.jpg" alt="temoignage">
+          </div>
+          <div class="temoignages__item">
+            <img src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_2669-edit.jpg" alt="temoignage">
+          </div>
+          <div class="temoignages__item">
+            <img src="http://jashughatt.co.za/wp-content/uploads/2014/10/img_4206-edit.jpg" alt="temoignage">
+          </div>
+        </div>
+        <div class="div__nav_slider div__nav_slider--right"><span>></span></div>
+      </div>
+    </section>
     <section id="div__ressources">
       <h2>Nos ressources</h2>
       <a href="#">Télécharger les fichiers</a>
@@ -82,6 +100,18 @@
       </form>
     </section>
     <script>
+      function moveSlider(sens) {
+        let sliderContainer = document.querySelector("#div__temoignages .temoignages__container")
+        let slideWidth = sliderContainer.offsetWidth
+        let currentScroll = sliderContainer.scrollLeft
+  
+        if (sens == "left") {
+          sliderContainer.scroll(currentScroll-slideWidth-4, 0)
+        } else {
+          sliderContainer.scroll(currentScroll+slideWidth+4, 0)
+        }
+      }
+      
       function switchDiapo(sens = "left") {
         let container = document.querySelector(".container__diapo");
         let slide1 = container.querySelector(".diapo__item:nth-child(2)");
@@ -96,8 +126,18 @@
       }
 
       window.onload = () => {
-        let slider = document.querySelector("#div__offres .div__nav_slider")
-        if (slider) {
+        let sliderTemoignages = document.querySelector("#div__temoignages .temoignages__container")
+        if (sliderTemoignages) {
+          document.querySelector(".temoignages__global--mobile .div__nav_slider--left").addEventListener("click", function(){
+            moveSlider("left")
+          })
+          document.querySelector(".temoignages__global--mobile .div__nav_slider--right").addEventListener("click", function(){
+            moveSlider("right")
+          })
+        }
+
+        let sliderOffres = document.querySelector("#div__offres .div__nav_slider")
+        if (sliderOffres) {
           document
             .querySelector(
               "#div__offres .div__nav_slider--left"

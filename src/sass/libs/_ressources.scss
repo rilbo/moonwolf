@@ -1,15 +1,8 @@
-* {
-  font-family: $montserrat;
-}
-
-h2 {
-  font-size: 30px;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-}
-
 #div__ressources {
+  h2 {
+    color: white;
+  }
+
   background-color: #346751;
   height: 160px;
   display: flex;
@@ -21,7 +14,7 @@ h2 {
   a {
     color: white;
     padding: 10px 30px;
-    background-color: #C84B31;
+    background-color: #c84b31;
     border-radius: 15px;
   }
 
