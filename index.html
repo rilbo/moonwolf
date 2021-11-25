@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MC4FF2T");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <title>Moonwolf</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/main.js"></script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MC4FF2T"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
       <nav>
-        <input type="checkbox" id="nav-check">
+        <input type="checkbox" id="nav-check" />
         <div class="nav-logo">
           <span class="header__logo">LOGO</span>
         </div>
@@ -20,13 +44,13 @@
             <span></span>
           </label>
         </div>
-          <ul class="nav-links">
-            <li><a href="#">Témoignages</a></li>
-            <li><a href="#">Ressources</a></li>
-            <li><a href="#">Offres</a></li>
-            <li><a href="#">Aides</a></li>
-            <li><a href="#">Actualités</a></li>
-          </ul>
+        <ul class="nav-links">
+          <li><a href="#">Témoignages</a></li>
+          <li><a href="#">Ressources</a></li>
+          <li><a href="#">Offres</a></li>
+          <li><a href="#">Aides</a></li>
+          <li><a href="#">Actualités</a></li>
+        </ul>
         <div class="nav-icons">
           <a href="#"
             ><img src="assets/img/logo_facebook.png" alt="facebook"
@@ -235,7 +259,13 @@
         </div>
         <div class="contact__champs">
           <label for="objet">Objet</label>
-          <input type="text" name="objet" id="objet" list="list-objet" required/>
+          <input
+            type="text"
+            name="objet"
+            id="objet"
+            list="list-objet"
+            required
+          />
           <datalist id="list-objet">
             <option value="Demande de devis" />
             <option value="Demande de renseignement" />
@@ -252,74 +282,102 @@
       </form>
     </section>
 
-    
     <article id="newsletter">
       <!-- Begin Mailchimp Signup Form -->
-     <div id="mc_embed_signup">
-        <form action="https://gmail.us20.list-manage.com/subscribe/post?u=6d4892d2a4008d1148aba7142&amp;id=4ef5deedef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-           <div id="mc_embed_signup_scroll">
-              <h2>Newsletter</h2>
-              <section>
-                 <div class="mc-field-group">
-                    <label for="mce-EMAIL">Address : </label>
-                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                 </div>
-  
-                 <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                 
-                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_6d4892d2a4008d1148aba7142_4ef5deedef" tabindex="-1" value="">
-                 </div>
+      <div id="mc_embed_signup">
+        <form
+          action="https://gmail.us20.list-manage.com/subscribe/post?u=6d4892d2a4008d1148aba7142&amp;id=4ef5deedef"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll">
+            <h2>Newsletter</h2>
+            <section>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Address : </label>
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                />
+              </div>
 
-                 <div class="clear">
-                    <input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="button">
-                 </div>
-              </section>
-              
-           </div>
-        </form>
-  </div>
-  
-  <!--End mc_embed_signup-->
+              <div id="mce-responses" class="clear">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 
-  </article>
-  <footer>
-    <div class="content">
-      <ul class="nav-footer-links">
-        <li><a href="#">Témoignages</a></li>
-        <li><a href="#">Ressources</a></li>
-        <li><a href="#">Offres</a></li>
-        <li><a href="#">Aides</a></li>
-        <li><a href="#">Actualités</a></li>
-      </ul>
-      <div class="copyright">
-        <div>
-          <div>
-            <h4>© Premier Pas</h4>
-            <hr>
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_6d4892d2a4008d1148aba7142_4ef5deedef"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+
+              <div class="clear">
+                <input
+                  type="submit"
+                  value="S'inscrire"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button"
+                />
+              </div>
+            </section>
           </div>
-          <h5>Contact: hello.premierpas@gmail.com</h5>
+        </form>
+      </div>
+
+      <!--End mc_embed_signup-->
+    </article>
+    <footer>
+      <div class="content">
+        <ul class="nav-footer-links">
+          <li><a href="#">Témoignages</a></li>
+          <li><a href="#">Ressources</a></li>
+          <li><a href="#">Offres</a></li>
+          <li><a href="#">Aides</a></li>
+          <li><a href="#">Actualités</a></li>
+        </ul>
+        <div class="copyright">
+          <div>
+            <div>
+              <h4>© Premier Pas</h4>
+              <hr />
+            </div>
+            <h5>Contact: hello.premierpas@gmail.com</h5>
+          </div>
+        </div>
+        <div class="nav-footer-icon">
+          <a href="#"
+            ><img src="assets/img/logo_facebook.png" alt="facebook"
+          /></a>
+          <a href="#"
+            ><img src="assets/img/logo_instagram.png" alt="instagram"
+          /></a>
+          <a href="#"
+            ><img src="assets/img/logo_linkedin.png" alt="linkedin"
+          /></a>
         </div>
       </div>
-      <div class="nav-footer-icon">
-        <a href="#"
-          ><img src="assets/img/logo_facebook.png" alt="facebook"
-        /></a>
-        <a href="#"
-          ><img src="assets/img/logo_instagram.png" alt="instagram"
-        /></a>
-        <a href="#"
-          ><img src="assets/img/logo_linkedin.png" alt="linkedin"
-        /></a>
-      </div>
-    </div>
-  </footer>
-
-
-
+    </footer>
 
     <script>
       function moveSlider(sens) {
@@ -411,11 +469,21 @@
             http.onreadystatechange = function () {
               //Call a function when the state changes.
               if (http.readyState == 4 && http.status == 200) {
-                let json = JSON.parse(http.responseText)
-                form.querySelector(".form__contact--message").innerHTML = json.message
-                form.querySelector(".form__contact--message").classList.remove("form__message--success", "form__message--error");
-                let classMessage = json.error ? "form__message--error" : "form__message--success"
-                form.querySelector(".form__contact--message").classList.add(classMessage);
+                let json = JSON.parse(http.responseText);
+                form.querySelector(".form__contact--message").innerHTML =
+                  json.message;
+                form
+                  .querySelector(".form__contact--message")
+                  .classList.remove(
+                    "form__message--success",
+                    "form__message--error"
+                  );
+                let classMessage = json.error
+                  ? "form__message--error"
+                  : "form__message--success";
+                form
+                  .querySelector(".form__contact--message")
+                  .classList.add(classMessage);
               }
             };
             http.send(params);
