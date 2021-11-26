@@ -7,7 +7,6 @@
         padding-bottom: 60px;
 
         h2{
-            font-size: 40px;
             text-align: center;
             margin-bottom: 40px;
         }
@@ -23,18 +22,22 @@
             }
 
             .mc-field-group{
-                width: 75%;
+                width: 500px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 label{
+                    margin-right: 18px;
                     font-size: 20px;
-                    min-width: 100px;
+                    min-width: 120px;
                     margin-right: 10px;
                     
                 }
                 @media (max-width: 850px){
-                    width: 90%;
+                    width: 70%;
+                }
+                @media (max-width: 500px){
+                    width: 80%;
                 }
             }
             #mce-EMAIL{
@@ -44,13 +47,11 @@
                 margin-bottom: 5px;
                 border: none;
                 cursor: pointer;
-                
-                
             }
             .button{
                 background-color: #C84B31;
                 width: 120px;
-                height: 35px;
+                height: 30px;
                 border-radius:5px;
                 margin-left: 60px;
                 color: white;
