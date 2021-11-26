@@ -1,0 +1,44 @@
+#div__ressources {
+  h2 {
+    color: white;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.5em;
+    }
+  
+    @media (max-width: 768px) {
+      font-size: 1.25em;
+    }
+
+  }
+
+  background-color: #346751;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+
+  a {
+    color: white;
+    padding: 10px 30px;
+    background-color: #c84b31;
+    border-radius: 15px;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.125em;
+    }
+  
+    @media (max-width: 768px) {
+      font-size: 0.75em;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: row;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}

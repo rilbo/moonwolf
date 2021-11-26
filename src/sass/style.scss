@@ -1,48 +1,20 @@
-@import "libs/reset.scss";
-@import "libs/flex.scss";
-@import "libs/size.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "libs/_variable.scss";
+@import "libs/_reset.scss";
+@import "libs/_basics.scss";
+@import "mixins/_flex.scss";
 
-section{
-    @include flex(center);
-}
+@import "libs/contact";
+@import "libs/offres";
+@import "libs/ressources";
+@import "libs/temoignages";
+@import "libs/navbar";
+@import "libs/valeurs";
+@import "libs/video";
+@import "libs/commentaires";
+@import "libs/actualites";
+@import "libs/aidesfemmes";
+@import "libs/footer";
+@import "libs/newsletter";
 
-#newsletter{
-    #mc_embed_signup{
-        background:#346751; 
-        clear:left; 
-        color: #fff;
-        padding-top: 32px;
-        padding-bottom: 137px;
-        h2{
-            font-size: 40px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        section{
-            height: 0px;
-            .mc-field-group{
-                label{
-                    font-size: 36px;
-                    margin-right: 18px;
-                }
-            }
-
-            #mce-EMAIL{
-                width: 583px;
-                height: 48px;
-                border-radius:5px;
-                margin-bottom: 5px;
-            }
-            .button{
-                background-color: #C84B31;
-                width: 272px;
-                height: 48px;
-                border-radius:15px;
-                margin-left: 73px;
-                color: white;
-                font-size: 24px;
-            }
-        }
-        
-    }
-}
