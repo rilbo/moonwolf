@@ -38,6 +38,12 @@
                 @media (max-width: 1024px){
                     width: 300px;
                 }
+                @media (max-width: 860x){
+                    width: 200px;
+                }
+                @media (max-width: 500x){
+                    width: 100px;
+                }
             }
             .button{
                 background-color: #C84B31;
@@ -51,6 +57,7 @@
                 cursor: pointer;
                 @media (max-width: 1024px){
                     margin-top: 20px;
+                    margin-left: 0px;
                 }
             }
         }
