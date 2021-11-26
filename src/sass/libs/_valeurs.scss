@@ -64,25 +64,13 @@
       }
 
       span {
-        font-size: 1.2em;
         font-family: $montserrat;
         font-weight: 600;
-        @media (max-width: 810px){
-          font-size: 1.5em;
-        }
-        @media (max-width: 600px){
-          font-size: 1em;
-        }
+        
       }
 
       p {
         text-align: center;
-        @media (max-width: 810px){
-          font-size: 1em;
-        }
-        @media (max-width: 600px){
-          font-size: 0.75em;
-        }
       }
     }
   }
