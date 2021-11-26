@@ -9,24 +9,26 @@ header {
     position: absolute;
     width: 100%;
     top: 0px;
-
     #nav-check, .nav-btn{
       display: none;
     }
 
     .nav-logo {
-      background-color: $dark-grey;
       color: white;
       display: grid;
       place-items: center;
-      padding: 8px 30px;
+      a{
+          height: 50px;
+      }
+      img{
+        height: 100%;
+      }
     }
 
     .nav-links{
       display: flex;
       align-items: center;
       gap: 0px 5%;
-
       a {
         color: black;
       }
