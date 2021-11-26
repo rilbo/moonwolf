@@ -5,12 +5,13 @@
   justify-items: center;
   align-items: center;
   @media (max-width: 1024px){
+    padding: 50px 0px;
     height: 500px;
   }
   @media (max-width: 820px){
     height: 400px;
   }
-  @media (max-width: 700px){
+  @media (max-width: 500px){
     height: 300px;
   }
   video {
@@ -19,7 +20,7 @@
     margin-left: auto;
     margin-right: auto;
     @media (max-width: 1024px){
-      width: 80%;
+      width: 100%;
     }
   }
 }
