@@ -3,9 +3,16 @@
   display: flex;
   flex-direction: column;
   background-color: $main-color;
+  @media (max-width: 1024px){
+    padding: 50px 100px;
+ }
+  @media (max-width: 768px){
+     padding: 50px 50px;
+  }
 
-  h3 {
+  h2 {
     margin-bottom: 30px;
+    color: white;
   }
 
   .commentaires__global {
@@ -16,19 +23,28 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-
     .commentaire__item {
       display: flex;
   
       span, p {
         color: white;
         max-width: 50%;
+        font-size: 1em;
+        @media (max-width: 1024px){
+          max-width: 100%;
+        }
       }
       
       span {
         font-weight: bold;
+        @media (max-width: 1024px){
+          display: block;
+          margin-top: 5px;
+        }
       }
-      
+      @media (max-width: 1024px){
+        margin-top: 20px;
+      }
       &--droite {
         justify-content: flex-end;
   
@@ -36,11 +52,23 @@
           text-align: right;
           display: block;
           margin-left: auto;
+          
+          @media (max-width: 1024px){
+            text-align: left;
+            margin-left: 0;
+          }
         }
+
   
         p {
           font-style: italic;
         }
+
+        @media (max-width: 1024px){
+          justify-content: flex-start;
+        }
+
+
       }
     }
   }
