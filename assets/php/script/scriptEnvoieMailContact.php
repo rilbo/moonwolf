@@ -41,8 +41,8 @@ try {
   $mail->Port       = 465;
 
   //Recipients
-  $mail->setFrom("moonwolf.dcp@gmail.com", 'Formulaire de contact de Premier Pas');
-  $mail->addAddress("moonwolf.dcp@gmail.com");
+  $mail->setFrom("hello@un-premier-pas.fr", 'Formulaire de contact de Premier Pas');
+  $mail->addAddress("hello@un-premier-pas.fr");
   $mail->addReplyTo($mailUser, $objet);
 
   //Content

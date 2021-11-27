@@ -258,7 +258,7 @@
         <div class="contact__champs contact__champs--demi">
           <div>
             <label for="numero">Numéro</label>
-            <input type="text" name="numero" id="numero" />
+            <input type="tel" name="numero" id="numero" />
           </div>
           <div>
             <label for="mail">Mail</label>
@@ -432,13 +432,7 @@
             event.preventDefault();
             var http = new XMLHttpRequest();
             var url = "assets/php/script/scriptEnvoieMailContact.php";
-            var params = `
-            nom=${form.querySelector("#nom").value}
-            &prenom=${form.querySelector("#prenom").value}
-            &numero=${form.querySelector("#numero").value}
-            &mail=${form.querySelector("#mail").value}
-            &objet=${form.querySelector("#objet").value}
-            &message=${form.querySelector("#message").value}`;
+            var params = `&nom=${form.querySelector("#nom").value.trim()}&prenom=${form.querySelector("#prenom").value}&numero=${form.querySelector("#numero").value}&mail=${form.querySelector("#mail").value}&objet=${form.querySelector("#objet").value}&message=${form.querySelector("#message").value}`;
             http.open("POST", url, true);
 
             //Send the proper header information along with the request
@@ -459,9 +453,13 @@
                     "form__message--success",
                     "form__message--error"
                   );
-                let classMessage = json.error
-                  ? "form__message--error"
-                  : "form__message--success";
+                let classMessage
+                if (json.error) {
+                  classMessage = "form__message--error"
+                } else {
+                  dataLayer.push({ event: "envoi-contact" })
+                  classMessage = "form__message--success"
+                }
                 form
                   .querySelector(".form__contact--message")
                   .classList.add(classMessage);
