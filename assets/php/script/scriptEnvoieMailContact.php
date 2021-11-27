@@ -33,7 +33,7 @@ $mail = new PHPMailer(true);
 try {
   //Server settings
   $mail->isSMTP();
-  $mail->Host       = 'smtp-moonwolf.alwaysdata.net';
+  $mail->Host       = 'smtp.hostinger.com';
   $mail->SMTPAuth   = true;
   $mail->Username   = $_SERVER['ADRESSE_MAIL'];
   $mail->Password   = $_SERVER['MDP_MAIL'];
