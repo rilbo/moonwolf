@@ -19,7 +19,7 @@
     <title>Premier Pas</title>
     <link rel="icon" href="assets/img/favicon.ico" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -38,28 +38,29 @@
     <div id="fb-root"></div>
 
     <!-- Your Plugin de discussion code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
+      var chatbox = document.getElementById("fb-customer-chat");
       chatbox.setAttribute("page_id", "103213425532596");
       chatbox.setAttribute("attribution", "biz_inbox");
 
-      window.fbAsyncInit = function() {
+      window.fbAsyncInit = function () {
         FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
+          xfbml: true,
+          version: "v12.0",
         });
       };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js";
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      })(document, "script", "facebook-jssdk");
     </script>
 
     <header>
@@ -321,25 +322,53 @@
 
     <article id="newsletter">
       <!-- Begin Mailchimp Signup Form -->
-     <div id="mc_embed_signup">
-        <form action="https://gmail.us20.list-manage.com/subscribe/post?u=6d4892d2a4008d1148aba7142&amp;id=4ef5deedef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-           <div id="mc_embed_signup_scroll">
-              <h2>Newsletter</h2>
-              
-              <section>
-                 <div class="mc-field-group">
-                    <label for="mce-EMAIL">Addresse : </label>
-                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                 </div>
-  
-                 <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                 
-                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_6d4892d2a4008d1148aba7142_4ef5deedef" tabindex="-1" value="">
-                 </div>
+      <div id="mc_embed_signup">
+        <form
+          action="https://gmail.us20.list-manage.com/subscribe/post?u=6d4892d2a4008d1148aba7142&amp;id=4ef5deedef"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll">
+            <h2>Newsletter</h2>
+
+            <section>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Addresse : </label>
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                />
+              </div>
+
+              <div id="mce-responses" class="clear">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_6d4892d2a4008d1148aba7142_4ef5deedef"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
 
               <div class="clear">
                 <input
@@ -370,24 +399,46 @@
           <div>
             <div>
               <h4>© Premier Pas</h4>
-              <hr>
+              <hr />
             </div>
-            <h5><a href="mailto:hello@un-premier-pas.fr" class="link__mail">hello@un-premier-pas.fr</a></h5>
+            <h5>
+              <a href="mailto:hello@un-premier-pas.fr" class="link__mail"
+                >hello@un-premier-pas.fr</a
+              >
+            </h5>
           </div>
         </div>
         <div class="nav-footer-icon">
-          <a target="_blank" href="https://www.facebook.com/Premier-Pas-103213425532596"
+          <a
+            target="_blank"
+            href="https://www.facebook.com/Premier-Pas-103213425532596"
             ><img src="assets/img/logo_facebook.png" alt="facebook"
           /></a>
           <a target="_blank" href="https://www.instagram.com/premierpas_off/"
             ><img src="assets/img/logo_instagram.png" alt="instagram"
           /></a>
-          <a target="_blank" href="https://www.linkedin.com/company/premier-pas-off/"
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/premier-pas-off/"
             ><img src="assets/img/logo_linkedin.png" alt="linkedin"
           /></a>
         </div>
       </div>
     </footer>
+    <script>
+      window.axeptioSettings = {
+        clientId: "61a69b13c6b25d4aed866150",
+        cookiesVersion: "un-premier-pas-base",
+      };
+
+      (function (d, s) {
+        var t = d.getElementsByTagName(s)[0],
+          e = d.createElement(s);
+        e.async = true;
+        e.src = "/assets/js/main.js";
+        t.parentNode.insertBefore(e, t);
+      })(document, "script");
+    </script>
 
     <script>
       function moveSlider(sens) {
@@ -418,6 +469,15 @@
       }
 
       window.onload = () => {
+        // setTimeout(() => {
+        //   if (document.querySelector(".bepVfn svg path")) {
+        //     document.querySelector(".bepVfn svg path").style.fill = "#346751";
+        //   }
+        // }, 5500);
+        // if (document.querySelector(".bepVfn svg path")) {
+        //   document.querySelector(".bepVfn svg path").style.fill = "#346751";
+        // }
+
         let sliderTemoignages = document.querySelector(
           "#div__temoignages .temoignages__container"
         );
@@ -461,7 +521,15 @@
             event.preventDefault();
             var http = new XMLHttpRequest();
             var url = "assets/php/script/scriptEnvoieMailContact.php";
-            var params = `&nom=${form.querySelector("#nom").value.trim()}&prenom=${form.querySelector("#prenom").value}&numero=${form.querySelector("#numero").value}&mail=${form.querySelector("#mail").value}&objet=${form.querySelector("#objet").value}&message=${form.querySelector("#message").value}`;
+            var params = `&nom=${form
+              .querySelector("#nom")
+              .value.trim()}&prenom=${
+              form.querySelector("#prenom").value
+            }&numero=${form.querySelector("#numero").value}&mail=${
+              form.querySelector("#mail").value
+            }&objet=${form.querySelector("#objet").value}&message=${
+              form.querySelector("#message").value
+            }`;
             http.open("POST", url, true);
 
             //Send the proper header information along with the request
@@ -482,12 +550,12 @@
                     "form__message--success",
                     "form__message--error"
                   );
-                let classMessage
+                let classMessage;
                 if (json.error) {
-                  classMessage = "form__message--error"
+                  classMessage = "form__message--error";
                 } else {
-                  dataLayer.push({ event: "envoi-contact" })
-                  classMessage = "form__message--success"
+                  dataLayer.push({ event: "envoi-contact" });
+                  classMessage = "form__message--success";
                 }
                 form
                   .querySelector(".form__contact--message")
