@@ -1,15 +1,49 @@
+(function (w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({
+    "gtm.start": new Date().getTime(),
+    event: "gtm.js",
+  });
+  var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s),
+    dl = l != "dataLayer" ? "&l=" + l : "";
+  j.async = true;
+  j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window, document, "script", "dataLayer", "GTM-NJTS63B");
+
 window.onload = () => {
+  setTimeout(() => {
+    var chatbox = document.getElementById("fb-customer-chat");
+    chatbox.setAttribute("page_id", "103213425532596");
+    chatbox.setAttribute("attribution", "biz_inbox");
 
-  setTimeout(() =>{
-    let iframes = document.querySelectorAll('iframes')
-    console.log(iframes)
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: "v12.0",
+      });
+    };
+
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+    let iframes = document.querySelectorAll("iframes");
     for (const index of iframes) {
-      index.setAttribute('title', 'Affichage icône pour le Live chat ( avec un membre de l\'association)')
-      console.log(index)
-  }
-  }, 3000)
+      index.setAttribute(
+        "title",
+        "Affichage icône pour le Live chat ( avec un membre de l'association)"
+      );
+      console.log(index);
+    }
+  }, 5000);
 
-  
   // Submit formulaire de contact
   let form = document.querySelector("#form__contact");
   if (form) {
@@ -17,9 +51,7 @@ window.onload = () => {
       event.preventDefault();
       var http = new XMLHttpRequest();
       var url = "assets/php/script/scriptEnvoieMailContact.php";
-      var params = `&nom=${form
-        .querySelector("#nom")
-        .value.trim()}&prenom=${
+      var params = `&nom=${form.querySelector("#nom").value.trim()}&prenom=${
         form.querySelector("#prenom").value
       }&numero=${form.querySelector("#numero").value}&mail=${
         form.querySelector("#mail").value
@@ -42,10 +74,7 @@ window.onload = () => {
             json.message;
           form
             .querySelector(".form__contact--message")
-            .classList.remove(
-              "form__message--success",
-              "form__message--error"
-            );
+            .classList.remove("form__message--success", "form__message--error");
           let classMessage;
           if (json.error) {
             classMessage = "form__message--error";
