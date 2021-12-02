@@ -153,6 +153,14 @@ header {
     align-items: center;
     flex-direction: column;
 
+    @media (max-width: 1024px){
+      background-image: url('../img/Fond-tablette.png');
+    }
+
+    @media (max-width: 768px){
+      background-image: url('../img/Fond-mobile.png');
+    }
+
     hr {
       width: 30%;
       margin: 15px 0px;

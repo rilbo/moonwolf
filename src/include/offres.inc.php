@@ -1,17 +1,31 @@
 <section id="div__offres">
   <h2>Pack offres</h2>
   <div class="container__diapo">
-    <div class="div__nav_slider div__nav_slider--left"><span>
-        << /span>
+    <div class="div__nav_slider div__nav_slider--left"><<span>
     </div>
     <a class="diapo__item" href="#">
-      <img src="assets/img/offre1.png" alt="portrait1" />
+      <figure>
+          <picture>
+            <source srcset="assets/img/offre1-mobile.png" media="(max-width: 770px)">
+            <img src="assets/img/offre1.png" alt="Teamwork de trois femmes">
+            <picture>
+        </figure>
     </a>
     <a class="diapo__item" href="#">
-      <img src="assets/img/offre2.png" alt="portrait2" />
+    <figure>
+          <picture>
+            <source srcset="assets/img/offre2-mobile.png" media="(max-width: 770px)">
+            <img src="assets/img/offre2.png" alt="Trois femmes souriantes regardant l'objectif">
+            <picture>
+        </figure>
     </a>
     <a class="diapo__item" href="#">
-      <img src="assets/img/offre3.png" alt="portrait3" />
+    <figure>
+          <picture>
+            <source srcset="assets/img/offre3-mobile.png" media="(max-width: 770px)">
+            <img src="assets/img/offre3.png" alt="Trois femmes travaillant sur un ordinateur portable">
+            <picture>
+        </figure>
     </a>
     <div class="div__nav_slider div__nav_slider--right"><span>></span></div>
   </div>
