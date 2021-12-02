@@ -1,4 +1,15 @@
 window.onload = () => {
+
+  setTimeout(() =>{
+    let iframes = document.querySelectorAll('iframes')
+    console.log(iframes)
+    for (const index of iframes) {
+      index.setAttribute('title', 'Affichage icône pour le Live chat ( avec un membre de l\'association)')
+      console.log(index)
+  }
+  }, 3000)
+
+  
   // Submit formulaire de contact
   let form = document.querySelector("#form__contact");
   if (form) {
