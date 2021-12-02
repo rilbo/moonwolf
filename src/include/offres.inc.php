@@ -6,7 +6,9 @@
     <a class="diapo__item" href="#">
       <figure>
           <picture>
-            <source srcset="assets/img/offre1-mobile.png" media="(max-width: 770px)">
+            <source srcset="assets/img/offre1-mobile.webp" media="(max-width: 770px)" type="image/webp">
+            <source srcset="assets/img/offre1-mobile.png" media="(max-width: 770px)" type="image/png">
+          <source srcset="assets/img/offre1.webp" type="image/webp">
             <img src="assets/img/offre1.png" alt="Teamwork de trois femmes">
             <picture>
         </figure>
@@ -14,7 +16,9 @@
     <a class="diapo__item" href="#">
     <figure>
           <picture>
-            <source srcset="assets/img/offre2-mobile.png" media="(max-width: 770px)">
+            <source srcset="assets/img/offre2-mobile.webp" media="(max-width: 770px)" type="image/webp">
+            <source srcset="assets/img/offre2-mobile.png" media="(max-width: 770px)" type="image/png">
+          <source srcset="assets/img/offre2.webp" type="image/webp">
             <img src="assets/img/offre2.png" alt="Trois femmes souriantes regardant l'objectif">
             <picture>
         </figure>
@@ -22,7 +26,9 @@
     <a class="diapo__item" href="#">
     <figure>
           <picture>
-            <source srcset="assets/img/offre3-mobile.png" media="(max-width: 770px)">
+            <source srcset="assets/img/offre3-mobile.webp" media="(max-width: 770px)" type="image/webp">
+            <source srcset="assets/img/offre3-mobile.png" media="(max-width: 770px)" type="image/png">
+          <source srcset="assets/img/offre3.webp" type="image/webp">
             <img src="assets/img/offre3.png" alt="Trois femmes travaillant sur un ordinateur portable">
             <picture>
         </figure>
