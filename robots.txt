@@ -1,0 +1,9 @@
+User-Agent: * 
+Disallow : /src/
+Disallow : /.env
+Disallow : /vendor/
+Disallow : /composer.phar
+Disallow : /composer.lock
+Disallow : /composer.json
+Sitemap: https://un-premier-pas.fr/sitemap.xml
+Sitemap: https://www.un-premier-pas.fr/sitemap.xml
