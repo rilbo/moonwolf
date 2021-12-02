@@ -27,8 +27,20 @@
     </div>
   </nav>
   <div id="div__first_view">
-    <h1>Premier pas</h1>
-    <hr />
-    <span class="first_view__baseline">Entreprendre est à la portée de toutes</span>
+    <figure>
+      <picture>
+        <source srcset="assets/img/Fond-mobile.webp" media="(max-width: 770px)" type="image/webp">
+        <source srcset="assets/img/Fond-tablette.webp" media="(max-width: 1024px)" type="image/webp">
+        <source srcset="assets/img/Fond-mobile.png" media="(max-width: 770px)" type="image/png">
+        <source srcset="assets/img/Fond-tablette.png" media="(max-width: 1024px)" type="image/png">
+        <source srcset="assets/img/Fond.webp" type="image/webp">
+        <img src="assets/img/Fond.png" alt="Femme souriant à l'objectif">
+        <picture>
+    </figure>
+    <div class="first_view__text--center">
+      <h1>Premier pas</h1>
+      <hr />
+      <span class="first_view__baseline">Entreprendre est à la portée de toutes</span>
+    </div>
   </div>
 </header>
