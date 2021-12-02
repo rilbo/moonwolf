@@ -1,1 +1,7 @@
+Windows:
+
 ./dart-sass/sass src/sass/style.scss assets/css/style.css --watch
+
+Mac:
+
+./dart-sass\ mac/sass src/sass/style.scss assets/css/style.css --watch
