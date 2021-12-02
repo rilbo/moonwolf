@@ -1,0 +1,37 @@
+#thank{
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+    flex-direction: column;
+    img{
+        width: 100px;   
+    }
+    
+    h1{
+        color: black;
+        font-size: 30px;
+        margin-top: 70px;
+        @media screen and (max-width : 500px){
+            font-size: 20px;
+        }
+    }
+    .thank-icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 150px;
+        gap: 0px 20px;
+        a{
+          height:30px;
+        }
+        img {
+          width: 30px;
+          @media screen and (max-width : 500px){
+            width: 20px;
+        }
+        }
+    }
+}
