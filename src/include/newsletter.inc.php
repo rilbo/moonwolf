@@ -1,7 +1,8 @@
 <article id="newsletter">
   <!-- Begin Mailchimp Signup Form -->
   <div id="mc_embed_signup">
-    <form action="https://gmail.us20.list-manage.com/subscribe/post?u=6d4892d2a4008d1148aba7142&amp;id=4ef5deedef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form action="https://gmail.us20.list-manage.com/subscribe/post?u=6d4892d2a4008d1148aba7142&amp;id=4ef5deedef" method="post" id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form" class="validate" target="_blank" onclick= "return avoidJump()">
       <div id="mc_embed_signup_scroll">
         <h2>Newsletter</h2>
 
