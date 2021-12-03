@@ -18,11 +18,25 @@
             font-size: 20px;
         }
     }
+    .retour{
+        padding: 8px 20px;
+        background-color: white;
+        border: 2px solid $secondary-color;
+        border-radius: 15px;
+        color: $secondary-color;
+        font-size: 18px;
+        margin-top: 150px;
+        &:hover{
+            border: 2px solid $main-color;
+            color: $main-color;
+        }
+    
+    }
     .thank-icons{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 150px;
+        margin-top: 50px;
         gap: 0px 20px;
         a{
           height:30px;

@@ -26,4 +26,16 @@ include_once "./src/include/head.inc.php";
 
 </body>
 
+<script>
+function avoidJump(){
+
+    var reg = /^[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2}$/;
+    v = document.getElementById('mce-EMAIL');
+    if( (v.value == "") ||  (!reg.test(v.value)) ){
+       v.style.border = "2px solid red";
+        return false;
+    }
+}
+</script>
+</html>
 </html>
