@@ -1,3 +1,4 @@
+// Debut ----- Google analytics & GTM
 (function (w, d, s, l, i) {
   w[l] = w[l] || [];
   w[l].push({
@@ -5,14 +6,16 @@
     event: "gtm.js",
   });
   var f = d.getElementsByTagName(s)[0],
-    j = d.createElement(s),
-    dl = l != "dataLayer" ? "&l=" + l : "";
+  j = d.createElement(s),
+  dl = l != "dataLayer" ? "&l=" + l : "";
   j.async = true;
   j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
   f.parentNode.insertBefore(j, f);
 })(window, document, "script", "dataLayer", "GTM-NJTS63B");
+// Fin ----- Google analytics & GTM
 
 window.onload = () => {
+  // Début ----- Plugin LiveChat Messenger
   setTimeout(() => {
     var chatbox = document.getElementById("fb-customer-chat");
     chatbox.setAttribute("page_id", "103213425532596");
@@ -43,6 +46,7 @@ window.onload = () => {
       console.log(index);
     }
   }, 5000);
+  // Fin ----- Plugin LiveChat Messenger
 
   // Submit formulaire de contact
   let form = document.querySelector("#form__contact");
