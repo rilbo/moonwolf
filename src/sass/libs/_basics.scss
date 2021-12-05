@@ -105,6 +105,15 @@ label {
   }
 }
 
+.btn-vide {
+  border-radius: 15px;
+  border: 1px solid $secondary-color;
+  color: $secondary-color;
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+}
+
 #axeptio_main_button > div > div > svg > path:nth-child(1),
 #normal-switch > div:nth-child(1) > div > svg > path {
   fill: $main-color !important;
