@@ -15,6 +15,20 @@
 // Fin ----- Google analytics & GTM
 
 window.onload = () => {
+
+  // début - animation mouse scroll disparition
+
+  window.onscroll = () => {
+    let topWindow = window.scrollY;
+    topWindow = topWindow * 3;
+    let windowHeight = window.innerHeight;
+    let position = topWindow / windowHeight;
+    position = 1 - position;
+    document.querySelector('.mouse').style.opacity = position;
+  }
+
+  // fin - animation mouse scroll disparition
+
   // Début ----- Plugin LiveChat Messenger
   setTimeout(() => {
     var chatbox = document.getElementById("fb-customer-chat");
