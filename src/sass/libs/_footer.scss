@@ -1,8 +1,9 @@
 footer {
     background-color: white;
-    padding: 40px;
+    padding: 60px;
     display: flex;
     justify-content: center;
+    position: relative;
     >.content{
         width:100%;
         display: flex;
@@ -18,11 +19,17 @@ footer {
         gap: 0px 5%;
         a {
           color: black;
-          font-weight: 600;
+          font-weight: 400;
         }
     }
 
     .copyright {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
         div {
             display: flex;
             flex-direction: column;
@@ -30,12 +37,14 @@ footer {
             div {
                 hr {
                     width: 100%;
-                    margin: 7px 0;
+                    margin: 2px 0;
                 }
-                
             }
-            h5 a{
+            h5,h4 {
+                font-weight: 400;
+                a{
                 color: black;
+            }
             }
         }
     }
@@ -48,16 +57,21 @@ footer {
         a{
           height:30px;
         }
-        img {
-          width: 30px;
-          
-        }
+        svg{
+            stroke: $secondary-color;
+            g path{
+              fill: $secondary-color;
+              stroke: none;
+            }
+          }
       }
 
-    @media screen and (min-width : 768px) and (max-width : 1024px) {
-
+    @media screen and (max-width : 1392px) {
+        >.content{
+            justify-content: flex-end;
+        }
         .nav-footer-links {
-            flex-direction: column;
+            display:none;
         }
 
         .copyright {
@@ -65,20 +79,17 @@ footer {
         }
     }
 
-    @media screen and (max-width : 500px) {
-        flex-direction: column;
+    @media screen and (max-width : 768px) {
+        >.content{
+            justify-content: center;
+        }
         .nav-footer-links {
             display: none;
         }
 
         .copyright {
-            margin: 0px;
+            display: none;
         }
-
-        .nav-footer-icon {
-            margin-top: 20px;
-        }
-
 
     }
 
