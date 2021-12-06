@@ -3,100 +3,83 @@
 }
 
 #div__offres {
-  height: 700px;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 700px;
   
-  &>a {
-    color: white;
-    padding: 10px 70px;
-    background-color: #C84B31;
-    border-radius: 15px;
-  }
   
   .container__diapo {
     max-width: 900px;
-    height: 100%;
     display: flex;
     align-items: center;
     overflow: hidden;
-    gap: 30px;
+    gap: 60px;
     position: relative;
-    margin: 20px 0px;
-    
-    .div__nav_slider {
-      display: none;
-      cursor: pointer;
-
-      &--left {
-        margin-right: 15px;
+    margin-top: 50px;
+    > div{
+      &:hover{
+        background-color:$main-color;
+        > div{
+          svg path {
+            stroke: white;
+          }
+          svg path:nth-child(n+10){
+            fill: $main-color;
+          }
+          h4{
+            color: white;
+          }
+        }
       }
-
-      &--right {
-        margin-left: 15px;
-      }
-
-      @media (max-width: 1024px) {
-        padding: 10px;
-      }
-    
-      @media (max-width: 768px) {
-        padding: 5px;
-      }
-    }
-  
-    .diapo__item {
-      height: 100%;
-      overflow: hidden;
-      transition: all ease 0.6s;
-      display: flex;
+      width: 205px;
+      height: 267px;
+      border: 1px solid $main-color;
+      border-radius:20px;
+      display:flex;
       justify-content: center;
       align-items: center;
-
-      &:first-child, &:last-child {
-        height: 80%;
-      }
-    }
-  
-    @media (max-width: 1024px) {
-      gap: unset;
-
-      .div__nav_slider  {
-        display: block;
-      }
-
-      .diapo__item {
-        height: 60%;
-  
-        img {
-          height: 100%;
-          max-height: 100%;
-          object-fit: cover;
-        }
-  
-        &:nth-child(2) {
-          margin-right: -40px;
-          height: 60%;
-        }
-  
-        &:nth-child(3) {
-          height: 80%;
-          z-index: 9;
-          min-width: 250px;
-        }
-  
-        &:nth-child(4) {
-          margin-left: -40px;
-          height: 60%;
+      > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4{
+          margin-top:10px;
+          color: $main-color;
+          @media (max-width: 768px) {
+            font-size:15px;
+          }
         }
       }
     }
 
     @media (max-width: 768px) {
-      
+      flex-direction: column;
+    }
+
+
+    
+
+  }
+
+    #btn__offres{
+      margin-top:50px;
+      color: white;
+      font-size:18px;
+      padding: 10px 20px;
+      @include background_color($secondary-color);
+      @media (max-width: 768px) {
+        font-size:15px;
+      }
+
+    }
+
+    
+
+    @media (max-width: 768px) {
+      height: auto;
     }
   }
-}
+
