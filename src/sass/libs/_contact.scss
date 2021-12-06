@@ -23,10 +23,14 @@
 
     .form__message--error {
       color: darkred;
+      margin-top: 20px;
+      text-align: center;
     }
 
     .form__message--success {
-      color: darkgreen;
+      color: $main-color;
+      margin-top: 20px;
+      text-align: center;
     }
   }
 
