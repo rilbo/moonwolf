@@ -40,11 +40,11 @@ try {
   //Recipients
   $mail->setFrom("hello@un-premier-pas.fr", 'Formulaire de contact de Premier Pas');
   $mail->addAddress("hello@un-premier-pas.fr");
-  $mail->addReplyTo($mailUser, $objet);
+  $mail->addReplyTo($mailUser, "Contact Premier Pas");
 
   //Content
   $mail->isHTML(true);
-  $mail->Subject = "FORMULAIRE DE CONTACT PREMIER PAS - ".$objet;
+  $mail->Subject = "FORMULAIRE DE CONTACT PREMIER PAS";
   $mail->Body    =
 '
 <div id="mail" style="width: 100%;max-width: 600px;background-color: #fff7e0;margin: 50px auto;">
