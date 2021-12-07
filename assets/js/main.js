@@ -107,3 +107,21 @@ window.onload = () => {
         .removeEventListener("play", function () {});
     });
 };
+
+//Les aides
+document.getElementById('btn__aides').addEventListener('click',function(){
+
+document.getElementById('btn__aides_fermer').style = "display : block";
+document.getElementById('btn__aides').style = "display : none";
+document.getElementById('aide_article').style = "display : flex";
+return false;
+})
+
+document.getElementById('btn__aides_fermer').addEventListener('click',function(){
+
+document.getElementById('btn__aides_fermer').style = "display : none";
+document.getElementById('btn__aides').style = "display : block";
+document.getElementById('aide_article').style = "display : none";
+return false;
+})
+
