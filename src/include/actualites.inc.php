@@ -1,7 +1,12 @@
 <section id="div__actualites">
-  <h2>Nos actualités</h2>
+  <div>
+    <h2>Nos actualités</h2>
+  </div>
+  
+
   <div class="global__actualites">
-    <a class="actualite__item" href="#">
+
+    <div class="actualite__item">
       <figure>
         <picture>
           <source srcset="assets/img/actualite1-mobile.webp" media="(max-width: 770px)" type="image/webp">
@@ -10,11 +15,21 @@
           <source srcset="assets/img/actualite1-tablette.png" media="(max-width: 1024px)" type="image/png">
           <source srcset="assets/img/actualite1.webp" type="image/webp">
           <img src="assets/img/actualite1.png" alt="Femme travaillant sur un ordinateur">
-          <picture>
+        </picture>
       </figure>
-      <p>L'inégalité homme femme, même dans l'entreprendre ?</p>
-    </a>
-    <a class="actualite__item" href="#">
+      <div class="desc">
+        <div>
+
+          <h4><a href="#">Entrepreneuriat féminin</a></h4>
+          <p>Les 5 grandes étapes pour gagner la confiance des investisseurs.</p>
+        </div>
+        <div>
+          <a href="#">Lire l'article</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="actualite__item" href="#">
       <figure>
         <picture>
           <source srcset="assets/img/actualite2-mobile.webp" media="(max-width: 770px)" type="image/webp">
@@ -22,12 +37,22 @@
           <source srcset="assets/img/actualite2-mobile.png" media="(max-width: 770px)" type="image/png">
           <source srcset="assets/img/actualite2-tablette.png" media="(max-width: 1024px)" type="image/png">
           <source srcset="assets/img/actualite2.webp" type="image/webp">
-          <img src="assets/img/actualite2.png" alt="Homme réfléchissant avec la tête entre les mains">
-          <picture>
+          <img src="assets/img/actualite2.png"  alt="Homme réfléchissant avec la tête entre les mains">
+        </picture>
       </figure>
-      <p>Les 5 principaux problèmes au sein d'une entreprise.</p>
-    </a>
-    <a class="actualite__item" href="#">
+      <div class="desc">
+        <div>
+          <h4><a href="#">Secteur du digital</a></h4>
+          <p>Les 5 problèmes lié à la gestion d'une entreprise dans un secteur encore peu féminin</p>
+        </div>
+        <div>
+          <a href="#">Lire l'article</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="actualite__item" href="#">
       <figure>
         <picture>
           <source srcset="assets/img/actualite3-mobile.webp" media="(max-width: 770px)" type="image/webp">
@@ -36,11 +61,21 @@
           <source srcset="assets/img/actualite3-tablette.png" media="(max-width: 1024px)" type="image/png">
           <source srcset="assets/img/actualite3.webp" type="image/webp">
           <img src="assets/img/actualite3.png" alt="6 mains se rejoignant les unes au dessus des autres">
-          <picture>
+        </picture>
       </figure>
-      <p>Chiffres de l'année 2021 sur l'accompagnement entrepreneurial.</p>
-    </a>
-    <a class="actualite__item" href="#">
+      <div class="desc">
+        <div>
+          <h4><a href="#">Statistique</a></h4>
+          <p>Découvrez les chiffres de l'année 2021 en France sur l'accompagnement féminin.</p>
+        </div>
+        <div>
+          <a href="#">Lire l'article</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="actualite__item" href="#">
       <figure>
         <picture>
           <source srcset="assets/img/actualite4-mobile.webp" media="(max-width: 770px)" type="image/webp">
@@ -49,10 +84,22 @@
           <source srcset="assets/img/actualite4-tablette.png" media="(max-width: 1024px)" type="image/png">
           <source srcset="assets/img/actualite4.webp" type="image/webp">
           <img src="assets/img/actualite4.png" alt="Femme faisant un massage à une autre femme">
-          <picture>
+        </picture>
       </figure>
-      <p>Le meilleur moyen de détente pour vos employés</p>
-    </a>
+      <div class="desc">
+        <div>
+          <h4><a href="#">Entrepreneuriat féminin</a></h4>
+          <p>Les 5 meilleurs conseils pour organiser votre vie professionelle et personnelle.</p>
+        </div>
+        <div>
+          <a href="#">Lire l'article</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <a href="#" id="btn__actualites">Voir plus</a>
+
+  <div id="btn__actualites" >
+  <a href="#"  class="btn">Voir plus</a>
+  </div>
+ 
 </section>
