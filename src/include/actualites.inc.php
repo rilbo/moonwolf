@@ -37,7 +37,7 @@
           <source srcset="assets/img/actualite2-mobile.png" media="(max-width: 770px)" type="image/png">
           <source srcset="assets/img/actualite2-tablette.png" media="(max-width: 1024px)" type="image/png">
           <source srcset="assets/img/actualite2.webp" type="image/webp">
-          <img src="assets/img/actualite2.png" alt="Homme réfléchissant avec la tête entre les mains">
+          <img src="assets/img/actualite2.png"  alt="Homme réfléchissant avec la tête entre les mains">
         </picture>
       </figure>
       <div class="desc">
