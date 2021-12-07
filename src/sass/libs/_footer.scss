@@ -16,6 +16,9 @@ footer {
     .nav-footer-links {
         display: flex;
         align-items: center;
+        li:last-child{
+            margin-left: 20px;
+        }
         gap: 0px 5%;
         a {
           color: black;
@@ -68,10 +71,7 @@ footer {
 
     @media screen and (max-width : 1392px) {
         >.content{
-            justify-content: flex-end;
-        }
-        .nav-footer-links {
-            display:none;
+            justify-content: space-between;
         }
 
         .copyright {

@@ -1,12 +1,8 @@
 <footer>
   <div class="content">
     <ul class="nav-footer-links">
-    <li><a href="#div__temoignages">Témoignages</a></li>
-      <li><a href="#div__ressources">Ressources</a></li>
-      <li><a href="#div__offres">Offres</a></li>
-      <li><a href="#div__aides_femmes">Aides</a></li>
-      <li><a href="#div__actualites">Actualités</a></li>
-      <li><a href="#div__contact">Contact</a></li>
+      <li><a href="#">Mentions&nbsp;légales</a></li>
+      <li><a href="#">RGPD</a></li>
     </ul>
 
     <div class="copyright">
