@@ -2,9 +2,10 @@
   padding: 175px 0px;
   display: flex;
   justify-content: center;
-  
+  border: 2px solid rebeccapurple;
   @media (max-width: 1024px){
-    padding: 20px;
+    padding: 20px 0px 100px 0px;
+
   }
   
   .container__valeurs {
