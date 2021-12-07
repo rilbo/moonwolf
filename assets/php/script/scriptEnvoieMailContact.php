@@ -1,6 +1,7 @@
 <?php
 if (
-  !isset($_POST['objet']) || htmlspecialchars(strip_tags($_POST['objet'])) == '' ||
+  !isset($_POST['nom']) || htmlspecialchars(strip_tags($_POST['nom'])) == '' ||
+  !isset($_POST['prenom']) || htmlspecialchars(strip_tags($_POST['prenom'])) == '' ||
   !isset($_POST['mail']) || htmlspecialchars(strip_tags($_POST['mail'])) == '' ||
   !isset($_POST['message']) || htmlspecialchars(strip_tags($_POST['message'])) == ''
 ) {
@@ -8,14 +9,10 @@ if (
 }
 
 // Champs obligatoires
-$objet = htmlspecialchars(strip_tags($_POST['objet']));
+$nom = htmlspecialchars(strip_tags($_POST['nom']));
+$prenom = htmlspecialchars(strip_tags($_POST['prenom']));
 $mailUser = htmlspecialchars(strip_tags($_POST['mail']));
 $message = htmlspecialchars(strip_tags($_POST['message']));
-
-// Champs optionnels
-$nom = isset($_POST['nom']) && htmlspecialchars(strip_tags($_POST['nom'])) != '' ? htmlspecialchars(strip_tags($_POST['nom'])) : 'Non renseigné';
-$prenom = isset($_POST['prenom']) && htmlspecialchars(strip_tags($_POST['prenom'])) != '' ? htmlspecialchars(strip_tags($_POST['prenom'])) : 'Non renseigné';
-$numero = isset($_POST['numero']) && htmlspecialchars(strip_tags($_POST['numero'])) != '' ? htmlspecialchars(strip_tags($_POST['numero'])) : 'Non renseigné';
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/assets/php/config.php';
 
@@ -43,34 +40,32 @@ try {
   //Recipients
   $mail->setFrom("hello@un-premier-pas.fr", 'Formulaire de contact de Premier Pas');
   $mail->addAddress("hello@un-premier-pas.fr");
-  $mail->addReplyTo($mailUser, $objet);
+  $mail->addReplyTo($mailUser, "Contact Premier Pas");
 
   //Content
   $mail->isHTML(true);
-  $mail->Subject = "FORMULAIRE DE CONTACT PREMIER PAS - ".$objet;
+  $mail->Subject = "FORMULAIRE DE CONTACT PREMIER PAS";
   $mail->Body    =
 '
-<div id="mail" style="width: 100%;max-width: 600px;background-color: oldlace;margin: 50px auto;">
-<div class="banner" style="height: 100px;width: 100%;background-color: mediumseagreen;display: flex;justify-content: center;align-items: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">
-  <img src="https://static.vecteezy.com/system/resources/previews/001/191/736/non_2x/circle-logo-png.png" alt="logo" style="margin: auto;height: 80%;text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+<div id="mail" style="width: 100%;max-width: 600px;background-color: #fff7e0;margin: 50px auto;">
+<div class="banner" style="height: 100px;width: 100%;background-color: #346751;display: flex;justify-content: center;align-items: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+  <img src="https://un-premier-pas.fr/assets/img/logo_blanc.png" alt="logo" style="margin: auto;height: 80%;text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">
   <span class="logo_text" style="color: white;font-size: 2em;font-family: Verdana, Geneva, Tahoma, sans-serif;margin: auto;">Premier Pas</span>
 </div>
 <div id="content" style="font-family: Verdana, Geneva, Tahoma, sans-serif;padding: 50px 15px;">
   <h1 style="text-align: center;font-weight: bold;font-size: 1.2em;margin-bottom: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;">Formulaire de contact de Premier Pas</h1>
-  <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Objet :</span> '.$objet.'</p>
   <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Auteur :</span> '.$mailUser.'</p>
   <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Nom :</span> '.$nom.'</p>
   <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Prénom :</span> '.$prenom.'</p>
-  <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Numéro :</span> '.$numero.'</p>
   <p style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;"><span class="item" style="font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">Message :</span></p>
   <pre style="margin-bottom: 10px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
 '.$message.'
   </pre>
 </div>
-<div class="banner" style="height: 100px;width: 100%;background-color: mediumseagreen;display: flex;justify-content: center;align-items: center;font-family: Verdana, Geneva, Tahoma, sans-serif;"></div>
+<div class="banner" style="height: 100px;width: 100%;background-color: #346751;display: flex;justify-content: center;align-items: center;font-family: Verdana, Geneva, Tahoma, sans-serif;"></div>
 </div>
 ';
-  $mail->AltBody = $message;
+  $mail->AltBody = "Mail de l'utilisateur : ".$mailUser." | Nom : ".$nom." | Prénom : ".$prenom." | Message : ".$message;
 
   $mail->send();
   // Message envoyé

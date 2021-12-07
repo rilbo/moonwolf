@@ -6,8 +6,8 @@
     event: "gtm.js",
   });
   var f = d.getElementsByTagName(s)[0],
-  j = d.createElement(s),
-  dl = l != "dataLayer" ? "&l=" + l : "";
+    j = d.createElement(s),
+    dl = l != "dataLayer" ? "&l=" + l : "";
   j.async = true;
   j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
   f.parentNode.insertBefore(j, f);
@@ -71,9 +71,7 @@ window.onload = () => {
       var url = "assets/php/script/scriptEnvoieMailContact.php";
       var params = `&nom=${form.querySelector("#nom").value.trim()}&prenom=${
         form.querySelector("#prenom").value
-      }&numero=${form.querySelector("#numero").value}&mail=${
-        form.querySelector("#mail").value
-      }&objet=${form.querySelector("#objet").value}&message=${
+      }&mail=${form.querySelector("#mail").value}&message=${
         form.querySelector("#message").value
       }`;
       http.open("POST", url, true);
@@ -123,3 +121,21 @@ window.onload = () => {
         .removeEventListener("play", function () {});
     });
 };
+
+//Les aides
+document.getElementById('btn__aides').addEventListener('click',function(){
+
+document.getElementById('btn__aides_fermer').style = "display : block";
+document.getElementById('btn__aides').style = "display : none";
+document.getElementById('aide_article').style = "display : flex";
+return false;
+})
+
+document.getElementById('btn__aides_fermer').addEventListener('click',function(){
+
+document.getElementById('btn__aides_fermer').style = "display : none";
+document.getElementById('btn__aides').style = "display : block";
+document.getElementById('aide_article').style = "display : none";
+return false;
+})
+
