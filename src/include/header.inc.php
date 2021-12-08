@@ -29,9 +29,7 @@
   <div id="div__first_view">
     <figure>
       <picture>
-        <source srcset="assets/img/Fond-mobile.webp" media="(max-width: 770px)" type="image/webp">
         <source srcset="assets/img/Fond-tablette.webp" media="(max-width: 1024px)" type="image/webp">
-        <source srcset="assets/img/Fond-mobile.png" media="(max-width: 770px)" type="image/png">
         <source srcset="assets/img/Fond-tablette.png" media="(max-width: 1024px)" type="image/png">
         <source srcset="assets/img/Fond.webp" type="image/webp">
         <img src="assets/img/Fond.png" alt="Femme souriant à l'objectif">
