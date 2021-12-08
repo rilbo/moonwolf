@@ -3,7 +3,7 @@
     <input type="checkbox" id="nav-check" />
 
     <div class="nav-logo">
-      <a href="index.php">
+      <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="70" viewBox="0 0 53 83">
             <path id="Tracé_13" data-name="Tracé 13" d="M28.651,3A25.651,25.651,0,0,1,54.3,28.651V59.432a25.651,25.651,0,0,1-51.3,0V28.651A25.651,25.651,0,0,1,28.651,3" transform="translate(-2.384 -2.384)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
             <path id="Tracé_14" data-name="Tracé 14" d="M47.469,85.174h0a10.854,10.854,0,0,1,15.35,0m11.136-3.179a18.811,18.811,0,0,1-18.811,18.811h0A18.811,18.811,0,0,1,73.954,81.995ZM55.144,100.805A18.811,18.811,0,0,0,36.333,81.995a18.811,18.811,0,0,0,18.811,18.811ZM62.819,45.3h0a10.854,10.854,0,0,1-15.35,0M36.333,48.477a18.811,18.811,0,0,1,18.811-18.81A18.811,18.811,0,0,1,36.333,48.478Zm18.811-18.81A18.811,18.811,0,0,0,73.954,48.478h0A18.811,18.811,0,0,0,55.144,29.667Z" transform="translate(-28.877 -23.579)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
@@ -63,9 +63,7 @@
     <div id="filtre"></div>
     <figure>
       <picture>
-        <source srcset="assets/img/Fond-mobile.webp" media="(max-width: 770px)" type="image/webp">
         <source srcset="assets/img/Fond-tablette.webp" media="(max-width: 1024px)" type="image/webp">
-        <source srcset="assets/img/Fond-mobile.png" media="(max-width: 770px)" type="image/png">
         <source srcset="assets/img/Fond-tablette.png" media="(max-width: 1024px)" type="image/png">
         <source srcset="assets/img/Fond.webp" type="image/webp">
         <img src="assets/img/Fond.png" alt="Femme souriant à l'objectif">

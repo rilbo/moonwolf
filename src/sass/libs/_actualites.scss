@@ -15,14 +15,13 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 40px auto 0 auto;
   }
 
   &>#btn__actualites {
     padding: 40px 0 30px 0;
     .btn {
-      width: fit-content;
       border-color:white ;
       color: white;
     }
@@ -31,10 +30,12 @@
   .actualite__item {
     position: relative;
     width: fit-content;
-    
     img{
-      width:505px;
+      height: 390px;
       border-radius: 25px;
+      @media (max-width: 760px){
+        height: 300px;
+      }
     }
     .desc {
       position: absolute;
