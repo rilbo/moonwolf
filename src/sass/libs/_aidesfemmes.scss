@@ -27,7 +27,14 @@
       }
     }
     #btn__aides, #btn__aides_fermer{
-      width:150px;
+      
+        &:hover{
+          border-color: transparent;
+          background-color:$secondary-color;
+          color: white;
+          @include transition;
+        }
+      
       @media (max-width: 500px){
         padding: 10px 30px;
       }
@@ -42,7 +49,7 @@
     display: none;
     //display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px 145px;
     margin-top:60px;
     @media (max-width: 1152px){

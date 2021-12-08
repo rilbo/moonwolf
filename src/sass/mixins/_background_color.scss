@@ -1,7 +1,10 @@
 @mixin background_color($color) {
   background-color: $color;
-
   &:hover {
     background-color: lighten($color: $color, $amount: 5);
   }
+}
+
+@mixin transition() {
+  transition: all ease 400ms;
 }
