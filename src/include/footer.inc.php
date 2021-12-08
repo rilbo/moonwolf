@@ -1,8 +1,8 @@
 <footer>
   <div class="content">
     <ul class="nav-footer-links">
-      <li><a href="mentionlegale.php">Mentions&nbsp;légales</a></li>
-      <li><a href="rgpd.php">RGPD</a></li>
+      <li><a href="mentionlegale">Mentions&nbsp;légales</a></li>
+      <li><a href="rgpd">RGPD</a></li>
     </ul>
 
     <div class="copyright">

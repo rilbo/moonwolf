@@ -6,7 +6,7 @@
   align-items: center;
   position: relative;
   @media (max-width: 760px){
-    padding: 100px 0px;
+    padding: 100px 0px 0px 0px;
   }
 
   .temoignages__selector--mobile {
@@ -26,6 +26,9 @@
     display: block;
     width: 52px;
     transform: rotate(-135deg);
+    @media (max-width: 760px){
+      display: none;
+    }
   }
 
   &::before {
@@ -37,6 +40,9 @@
     display: block;
     width: 52px;
     transform: rotate(45deg);
+    @media (max-width: 760px){
+      display: none;
+    }
   }
 
   .temoignages__container {
