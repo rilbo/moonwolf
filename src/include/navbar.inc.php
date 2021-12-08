@@ -1,24 +1,34 @@
-<footer>
-  <div class="content">
-    <ul class="nav-footer-links">
-      <li><a href="mentionlegale.php">Mentions&nbsp;légales</a></li>
-      <li><a href="rgpd.php">RGPD</a></li>
-    </ul>
-
-    <div class="copyright">
-      <div>
-        <div>
-          <h4>© Premier Pas - Espace presse</h4>
-          <hr />
-        </div>
-        <h5>
-          <a href="mailto:hello@un-premier-pas.fr" class="link__mail">hello@un-premier-pas.fr</a>
-        </h5>
-      </div>
+<header>
+  <nav class="custom">
+    <input type="checkbox" id="nav-check" />
+    <div class="nav-logo">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="70" viewBox="0 0 53 83">
+            <path id="Tracé_13" data-name="Tracé 13" d="M28.651,3A25.651,25.651,0,0,1,54.3,28.651V59.432a25.651,25.651,0,0,1-51.3,0V28.651A25.651,25.651,0,0,1,28.651,3" transform="translate(-2.384 -2.384)" fill="none"  stroke-miterlimit="10" stroke-width="2"/>
+            <path id="Tracé_14" data-name="Tracé 14" d="M47.469,85.174h0a10.854,10.854,0,0,1,15.35,0m11.136-3.179a18.811,18.811,0,0,1-18.811,18.811h0A18.811,18.811,0,0,1,73.954,81.995ZM55.144,100.805A18.811,18.811,0,0,0,36.333,81.995a18.811,18.811,0,0,0,18.811,18.811ZM62.819,45.3h0a10.854,10.854,0,0,1-15.35,0M36.333,48.477a18.811,18.811,0,0,1,18.811-18.81A18.811,18.811,0,0,1,36.333,48.478Zm18.811-18.81A18.811,18.811,0,0,0,73.954,48.478h0A18.811,18.811,0,0,0,55.144,29.667Z" transform="translate(-28.877 -23.579)" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+            <path id="Tracé_15" data-name="Tracé 15" d="M100.977,166.572a9.405,9.405,0,1,1-9.405-9.405A9.405,9.405,0,0,1,100.977,166.572Z" transform="translate(-65.305 -124.915)" fill="none"  stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>  
+        </svg>
+      </a>
+      <p>Premier Pas</p>
     </div>
-    
-    <div class="nav-footer-icon">
-    <a target="_blank" href="https://www.facebook.com/Premier-Pas-103213425532596">
+
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.php#div__temoignages">Témoignages</a></li>
+      <li><a href="index.php#div__ressources">Ressources</a></li>
+      <li><a href="index.php#div__offres">Accompagnements</a></li>
+      <li><a href="index.php#div__aides_femmes">Aides</a></li>
+      <li><a href="index.php#div__actualites">Actualités</a></li>
+      <li><a href="index.php#div__contact">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a target="_blank" href="https://www.facebook.com/Premier-Pas-103213425532596">
         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14.8069 7.76663C14.8069 5.90949 15.7445 5.90949 16.6821 5.90949H17.8072C17.995 5.91199 18.1815 5.87718 18.3555 5.80714C18.5295 5.73709 18.6877 5.63322 18.8205 5.50165C18.9533 5.37009 19.0582 5.2135 19.1289 5.04113C19.1997 4.86876 19.2348 4.6841 19.2323 4.49806V2.75234C19.2323 2.56542 19.1948 2.38035 19.122 2.20789C19.0492 2.03543 18.9426 1.879 18.8083 1.74769C18.6739 1.61638 18.5146 1.51281 18.3395 1.44298C18.1645 1.37315 17.9771 1.33846 17.7884 1.34092L15.1257 1.30377C14.3504 1.27407 13.5778 1.41135 12.8612 1.70612C12.1447 2.00089 11.5013 2.44614 10.9753 3.01113C10.4494 3.57613 10.0536 4.24742 9.81509 4.97866C9.57661 5.70991 9.50117 6.4837 9.59399 7.24663V9.93949H8.11262C7.73465 9.93949 7.37217 10.0882 7.10491 10.3529C6.83765 10.6176 6.6875 10.9766 6.6875 11.3509V13.0966C6.6875 13.471 6.83765 13.83 7.10491 14.0947C7.37217 14.3594 7.73465 14.5081 8.11262 14.5081H9.59399V24.4809C9.59399 24.7272 9.69277 24.9634 9.8686 25.1375C10.0444 25.3117 10.2829 25.4095 10.5316 25.4095H13.9256C14.1644 25.3953 14.3886 25.2912 14.5525 25.1186C14.7163 24.946 14.8073 24.7178 14.8069 24.4809V14.5081H16.4571C16.835 14.5081 17.1975 14.3594 17.4648 14.0947C17.732 13.83 17.8822 13.471 17.8822 13.0966V11.3509C17.8822 10.9766 17.732 10.6176 17.4648 10.3529C17.1975 10.0882 16.835 9.93949 16.4571 9.93949H14.8069V7.76663Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -46,5 +56,5 @@
         </svg>
       </a>
     </div>
-  </div>
-</footer>
+  </nav>
+</header>
