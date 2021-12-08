@@ -20,16 +20,16 @@
       <div class="desc">
         <div>
 
-          <h4><a href="#">Entrepreneuriat féminin</a></h4>
+          <h4><a href="articles">Entrepreneuriat féminin</a></h4>
           <p>Les 5 grandes étapes pour gagner la confiance des investisseurs.</p>
         </div>
         <div>
-          <a href="#">Lire l'article</a>
+          <a href="articles">Lire l'article</a>
         </div>
       </div>
     </div>
 
-    <div class="actualite__item" href="#">
+    <div class="actualite__item" >
       <figure>
         <picture>
           <source srcset="assets/img/actualite2-mobile.webp" media="(max-width: 770px)" type="image/webp">
@@ -42,17 +42,17 @@
       </figure>
       <div class="desc">
         <div>
-          <h4><a href="#">Secteur du digital</a></h4>
+          <h4><a href="articles">Secteur du digital</a></h4>
           <p>Les 5 problèmes lié à la gestion d'une entreprise dans un secteur encore peu féminin</p>
         </div>
         <div>
-          <a href="#">Lire l'article</a>
+          <a href="articles">Lire l'article</a>
         </div>
       </div>
     </div>
 
 
-    <div class="actualite__item" href="#">
+    <div class="actualite__item">
       <figure>
         <picture>
           <source srcset="assets/img/actualite3-mobile.webp" media="(max-width: 770px)" type="image/webp">
@@ -65,17 +65,17 @@
       </figure>
       <div class="desc">
         <div>
-          <h4><a href="#">Statistique</a></h4>
+          <h4><a href="article">Statistique</a></h4>
           <p>Découvrez les chiffres de l'année 2021 en France sur l'accompagnement féminin.</p>
         </div>
         <div>
-          <a href="#">Lire l'article</a>
+          <a href="articles">Lire l'article</a>
         </div>
       </div>
     </div>
 
 
-    <div class="actualite__item" href="#">
+    <div class="actualite__item">
       <figure>
         <picture>
           <source srcset="assets/img/actualite4-mobile.webp" media="(max-width: 770px)" type="image/webp">
@@ -88,18 +88,18 @@
       </figure>
       <div class="desc">
         <div>
-          <h4><a href="#">Entrepreneuriat féminin</a></h4>
+          <h4><a href="articles">Entrepreneuriat féminin</a></h4>
           <p>Les 5 meilleurs conseils pour organiser votre vie professionelle et personnelle.</p>
         </div>
         <div>
-          <a href="#">Lire l'article</a>
+          <a href="articles">Lire l'article</a>
         </div>
       </div>
     </div>
   </div>
 
   <div id="btn__actualites" >
-  <a href="#"  class="btn">Voir plus</a>
+  <a href="articles"  class="btn">Voir plus</a>
   </div>
  
 </section>
