@@ -72,6 +72,12 @@
                         width: 100px;
                         margin-top: 53px;
                     }
+                    &:hover{
+                        border-color: transparent;
+                        background-color:white;
+                        color: black;
+                        @include transition;
+                      }
                  }
             }
         }

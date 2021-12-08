@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<?php
-    include_once "./src/include/head.inc.php";
-?>
-<body>
 <header>
-  <nav>
+  <nav class="custom">
     <input type="checkbox" id="nav-check" />
-
     <div class="nav-logo">
-      <a href="https://un-premier-pas.fr/">
+      <a href="index">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="70" viewBox="0 0 53 83">
-            <path id="Tracé_13" data-name="Tracé 13" d="M28.651,3A25.651,25.651,0,0,1,54.3,28.651V59.432a25.651,25.651,0,0,1-51.3,0V28.651A25.651,25.651,0,0,1,28.651,3" transform="translate(-2.384 -2.384)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-            <path id="Tracé_14" data-name="Tracé 14" d="M47.469,85.174h0a10.854,10.854,0,0,1,15.35,0m11.136-3.179a18.811,18.811,0,0,1-18.811,18.811h0A18.811,18.811,0,0,1,73.954,81.995ZM55.144,100.805A18.811,18.811,0,0,0,36.333,81.995a18.811,18.811,0,0,0,18.811,18.811ZM62.819,45.3h0a10.854,10.854,0,0,1-15.35,0M36.333,48.477a18.811,18.811,0,0,1,18.811-18.81A18.811,18.811,0,0,1,36.333,48.478Zm18.811-18.81A18.811,18.811,0,0,0,73.954,48.478h0A18.811,18.811,0,0,0,55.144,29.667Z" transform="translate(-28.877 -23.579)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-            <path id="Tracé_15" data-name="Tracé 15" d="M100.977,166.572a9.405,9.405,0,1,1-9.405-9.405A9.405,9.405,0,0,1,100.977,166.572Z" transform="translate(-65.305 -124.915)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>  
+            <path id="Tracé_13" data-name="Tracé 13" d="M28.651,3A25.651,25.651,0,0,1,54.3,28.651V59.432a25.651,25.651,0,0,1-51.3,0V28.651A25.651,25.651,0,0,1,28.651,3" transform="translate(-2.384 -2.384)" fill="none"  stroke-miterlimit="10" stroke-width="2"/>
+            <path id="Tracé_14" data-name="Tracé 14" d="M47.469,85.174h0a10.854,10.854,0,0,1,15.35,0m11.136-3.179a18.811,18.811,0,0,1-18.811,18.811h0A18.811,18.811,0,0,1,73.954,81.995ZM55.144,100.805A18.811,18.811,0,0,0,36.333,81.995a18.811,18.811,0,0,0,18.811,18.811ZM62.819,45.3h0a10.854,10.854,0,0,1-15.35,0M36.333,48.477a18.811,18.811,0,0,1,18.811-18.81A18.811,18.811,0,0,1,36.333,48.478Zm18.811-18.81A18.811,18.811,0,0,0,73.954,48.478h0A18.811,18.811,0,0,0,55.144,29.667Z" transform="translate(-28.877 -23.579)" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+            <path id="Tracé_15" data-name="Tracé 15" d="M100.977,166.572a9.405,9.405,0,1,1-9.405-9.405A9.405,9.405,0,0,1,100.977,166.572Z" transform="translate(-65.305 -124.915)" fill="none"  stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>  
         </svg>
       </a>
       <p>Premier Pas</p>
@@ -27,12 +20,12 @@
       </label>
     </div>
     <ul class="nav-links">
-      <li><a href="#div__temoignages">Témoignages</a></li>
-      <li><a href="#div__ressources">Ressources</a></li>
-      <li><a href="#div__offres">Accompagnements</a></li>
-      <li><a href="#div__aides_femmes">Aides</a></li>
-      <li><a href="#div__actualites">Actualités</a></li>
-      <li><a href="#div__contact">Contact</a></li>
+      <li><a href="/#div__temoignages">Témoignages</a></li>
+      <li><a href="/#div__ressources">Ressources</a></li>
+      <li><a href="/#div__offres">Accompagnements</a></li>
+      <li><a href="/#div__aides_femmes">Aides</a></li>
+      <li><a href="/#div__actualites">Actualités</a></li>
+      <li><a href="/#div__contact">Contact</a></li>
     </ul>
     <div class="nav-icons">
       <a target="_blank" href="https://www.facebook.com/Premier-Pas-103213425532596">
@@ -64,66 +57,4 @@
       </a>
     </div>
   </nav>
-  
-  <div id="div__first_view">
-    <div id="filtre"></div>
-    <figure>
-      <picture>
-        <source srcset="assets/img/accompagnements_first_view.webp" media="(max-width: 1024px)" type="image/webp">
-        <source srcset="assets/img/accompagnements_first_view.png" media="(max-width: 1024px)" type="image/png">
-        <source srcset="assets/img/accompagnements_first_view.webp" type="image/webp">
-        <img src="assets/img/accompagnements_first_view.png" alt="Femme souriant à l'objectif">
-        <picture>
-    </figure>
-    <div class="first_view__text--center">
-        <h1>Nos accompagnements</h1>
-        <hr />
-    </div>
-    <div class="mouse">
-      <div class="mouse-shape">
-        <div class="mouse-animation"></div>
-      </div>
-    </div>  
-  </div>
 </header>
-    <section id="div__accompagnements">
-        <p class="sous_titre">Doté d’expertes dans le domaine, nous vous proposons trois offres pour vous assister et répondre au mieux à vos attentes.</p>
-       <div>
-
-        <article>
-           <h3>Administratif</h3>
-           <p>Cette offre est faite pour celles qui ont un projet mais qui ne le réalise pas, par peur des risques, 
-               contraintes liés à la gestion de l’administratif concernant leur entreprise.</p>
-            <img src="assets/img/administratif.svg" alt="offre administratif">
-            
-       </article>
-
-       <article>
-           <h3>Juridique</h3>
-           <p>L’offre juridique vous aidera à comprendre et à choisir le statut de votre boîte, 
-               en effet il en existe plusieurs et il n’est pas toujours aisé de choisir le bon.</p>
-            <img src="assets/img/juridique.svg" alt="offre juridique">
-       </article>
-
-       <article>
-           <h3>Psychologique</h3>
-           <p>L’accompagnement psychologique vous permettra de mieux gérer votre état d’esprit et 
-               de pouvoir exploiter vos ressources tout en étant sereine mentalement.</p>
-            
-               <img src="assets/img/psychologique.svg" alt="offre psychologie">
-            
-       </article>
-
-       <img src="assets/img/fleur.svg"  alt="fleur_gauche" class="fleur_gauche">
-       <img src="assets/img/fleur.svg" alt="fleur_droit" class="fleur_droit">
-       </div>
-       
-    </section>
-
-    <?php
-      include_once "./src/include/contact.inc.php";
-      include_once "./src/include/newsletter.inc.php";
-      include_once "./src/include/footer.inc.php";
-    ?>
-</body>
-</html>

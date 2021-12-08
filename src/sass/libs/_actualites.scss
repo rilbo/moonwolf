@@ -24,6 +24,12 @@
     .btn {
       border-color:white ;
       color: white;
+      &:hover{
+        border-color: transparent;
+        background-color:white;
+        color:black;
+        @include transition;
+      }
     }
   
   }

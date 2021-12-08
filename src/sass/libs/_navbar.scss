@@ -1,5 +1,6 @@
 header {
   nav {
+    
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;
@@ -22,6 +23,9 @@ header {
       p{
         margin-left: 10px;
         font-size:15px;
+      }
+      a svg path{
+        stroke:white;
       }
     }
 
@@ -101,6 +105,7 @@ header {
       > .nav-btn{
           display: block;
           & > label{
+              display: block;
               width: 50px;
               height: 50px;
               padding: 13px;
@@ -151,6 +156,54 @@ header {
     } 
 
   }
+  nav.custom{
+    .nav-logo {
+      color: black;
+      a svg path{
+        stroke:black;
+      }
+    }
+
+    .nav-links{
+      a {
+        color: black;
+        
+      }
+    }
+
+    .nav-icons{
+      svg{
+        stroke: black;
+        g path{
+          fill: black;
+          stroke: none;
+        }
+      }
+    }
+
+    @media screen and (max-width : 1024px) {
+      > .nav-btn{
+        & > label{
+            & > span{
+                border-top: 2px solid black;
+            }
+        }
+      }
+      > .nav-links{
+        background-color: rgb(37, 37, 37);
+        li{
+          width:100%;
+          padding:20px 10px;
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+    
+
+
+} 
 
   #filtre{
     width: 100vw;
@@ -178,7 +231,7 @@ header {
     
 
     .first_view__text--center {
-      width: 500px;
+      min-width: 500px;
       position: absolute; 
       top: 50%;
       left: 50%;
@@ -226,6 +279,7 @@ header {
 
     hr {
       width:100%;
+      max-width: 400px;
       margin: 15px 0px;
       border-color: white;
       
@@ -284,4 +338,6 @@ header {
       top: 25%;
     }
   }
+
+  
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html prefix="og:https://ogp.me/ns#" lang="fr">
 
 <?php
 include_once "./src/include/head.inc.php";

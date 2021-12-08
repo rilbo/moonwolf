@@ -61,6 +61,6 @@
       
     </div>
   </div>
-  <a href="#" id="btn__offres" class="btn" >Découvrir</a>
+  <a href="accompagnements" id="btn__offres" class="btn" >Découvrir</a>
 
 </section>
