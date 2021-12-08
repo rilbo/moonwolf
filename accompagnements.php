@@ -4,9 +4,52 @@
     include_once "./src/include/head.inc.php";
 ?>
 <body>
-    <?php
-    include_once "./src/include/header.inc.php";
-    ?>
+<header>
+  <nav>
+    <input type="checkbox" id="nav-check" />
+
+    <div class="nav-logo">
+      <a href="#"><img src="assets/img/LOGO.png" alt="LOGO" /></a>
+    </div>
+
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#div__temoignages">Témoignages</a></li>
+      <li><a href="#div__ressources">Ressources</a></li>
+      <li><a href="#div__offres">Offres</a></li>
+      <li><a href="#div__aides_femmes">Aides</a></li>
+      <li><a href="#div__actualites">Actualités</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a target="_blank" href="https://www.facebook.com/Premier-Pas-103213425532596"><img src="assets/img/logo_facebook.png" alt="facebook" /></a>
+      <a target="_blank" href="https://www.instagram.com/premierpas_off/"><img src="assets/img/logo_instagram.png" alt="instagram" /></a>
+      <a target="_blank" href="https://www.linkedin.com/company/premier-pas-off/"><img src="assets/img/logo_linkedin.png" alt="linkedin" /></a>
+    </div>
+  </nav>
+  <div id="div__first_view">
+    <figure>
+      <picture>
+        <source srcset="assets/img/accompagnements_first_view.webp" media="(max-width: 770px)" type="image/webp">
+        <source srcset="assets/img/accompagnements_first_view.webp" media="(max-width: 1024px)" type="image/webp">
+        <source srcset="assets/img/accompagnements_first_view.png" media="(max-width: 770px)" type="image/png">
+        <source srcset="assets/img/accompagnements_first_view.png" media="(max-width: 1024px)" type="image/png">
+        <source srcset="assets/img/accompagnements_first_view.webp" type="image/webp">
+        <img src="assets/img/accompagnements_first_view.png" alt="Femme souriant à l'objectif">
+        <picture>
+    </figure>
+    <div class="first_view__text--center">
+      <h1>Premier pas</h1>
+      <hr />
+      <span class="first_view__baseline">Entreprendre est à la portée de toutes</span>
+    </div>
+  </div>
+</header>
   
     <section id="div__accompagnements">
         <p class="sous_titre">Doté d’expertes dans le domaine, nous vous proposons trois offres pour vous assister et répondre au mieux à vos attentes.</p>
