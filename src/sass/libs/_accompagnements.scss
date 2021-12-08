@@ -1,0 +1,95 @@
+#div__accompagnements{
+    padding: 160px 120px;
+
+    @media (max-width: 1200px){
+        padding: 174px 30px;
+    }
+    @media (max-width: 870px){
+        padding: 0px;
+        padding-top: 50px;;
+    }
+    .sous_titre{
+        text-align: center;
+        @media (max-width: 870px){
+            display: none;
+        }
+    }
+    div{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+        @media (max-width: 870px){
+            flex-direction: column;
+            justify-content: none;
+            align-items: center;
+            margin-top: 0px;
+        }
+
+        article{
+            border: 1px solid rgba(168, 168, 168, 0.8);
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(112, 112, 112, 0.1);
+            border-radius: 52px;
+            text-align: center;
+            width: 351px;
+            height: 483px;
+
+            @media (max-width: 1355px){
+                width: 300px;
+            }
+            @media (max-width: 1050px){
+                width: 260px;
+            }
+            @media (max-width: 870px){
+                   height: 300px;
+                   margin-bottom: 50px;
+            }
+            h3{
+                color: $details-color;
+                margin-top: 59px;
+                @media (max-width: 870px){
+                    margin-top: 20px;
+                }
+            }
+            p{
+                margin-top: 25px;
+                padding: 0 27px;
+                text-align: left;
+            }
+            img{
+                margin-top: 200px;
+                @media (max-width: 1050px){
+                    margin-top: 180px;
+                }
+
+                @media (max-width: 870px){
+                    margin-top: 45px;
+                }
+            }
+    
+        }
+        .fleur_gauche{
+            transform:rotate(45deg);
+            width: 51px;
+             position: absolute;
+            bottom: 40px;
+            left: 20px;
+            
+        }
+        .fleur_droit{
+            transform:rotate(-45deg);
+            position: absolute;
+            bottom: 40px;
+            right: 20px;
+        }
+        .fleur_gauche, .fleur_droit{
+            opacity: 0.5;
+            @media (max-width: 870px){
+                display: none;
+            }
+        }
+    }
+    
+}
