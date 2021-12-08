@@ -69,10 +69,10 @@
     <div id="filtre"></div>
     <figure>
       <picture>
-        <source srcset="assets/img/Fond-tablette.webp" media="(max-width: 1024px)" type="image/webp">
-        <source srcset="assets/img/Fond-tablette.png" media="(max-width: 1024px)" type="image/png">
-        <source srcset="assets/img/Fond.webp" type="image/webp">
-        <img src="assets/img/Fond.png" alt="Femme souriant à l'objectif">
+        <source srcset="assets/img/accompagnements_first_view.webp" media="(max-width: 1024px)" type="image/webp">
+        <source srcset="assets/img/accompagnements_first_view.png" media="(max-width: 1024px)" type="image/png">
+        <source srcset="assets/img/accompagnements_first_view.webp" type="image/webp">
+        <img src="assets/img/accompagnements_first_view.png" alt="Femme souriant à l'objectif">
         <picture>
     </figure>
     <div class="first_view__text--center">
