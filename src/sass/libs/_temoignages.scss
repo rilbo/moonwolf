@@ -5,6 +5,9 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  @media (max-width: 760px){
+    padding: 100px 0px;
+  }
 
   .temoignages__selector--mobile {
     display: none;
@@ -98,23 +101,34 @@
         font-weight: 600;
 
         &::before {
-          content: "“";
+          top: -35px;
+          left: -10px;
+          content: "";
+          -webkit-mask: url(../img/quote.svg) no-repeat center;
+          mask: url(../img/quote.svg) no-repeat center;
+          display: block;
           position: absolute;
-          top: -65px;
-          left: 0px;
-          font-size: 60px;
-          font-family: $montserrat;
-          transform: rotate(180deg);
+          background-color: white;
+          width: 41px;
+          height: 33px;
+          transform: scale(0.5);
+          @media (max-width: 760px){
+            top: -15px;
+          }
         }
 
         &::after {
-          content: "“";
-          position: absolute;
           bottom: -35px;
           right: 0px;
-          font-size: 60px;
-          font-family: $montserrat;
-          transform: rotate(180deg);
+          content: "";
+          -webkit-mask: url(../img/quote.svg) no-repeat center;
+          mask: url(../img/quote.svg) no-repeat center;
+          display: block;
+          position: absolute;
+          background-color: white;
+          width: 41px;
+          height: 33px;
+          transform: scale(0.5);
         }
       }
     }
@@ -173,12 +187,11 @@
             white-space: normal;
 
             &::before {
-              top: -65px;
               left: -20px;
             }
     
             &::after {
-              bottom: -35px;
+              bottom: -15px;
               right: -20px;
             }
           }
