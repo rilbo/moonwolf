@@ -16,7 +16,7 @@
                     <input type="text" name="b_6d4892d2a4008d1148aba7142_4ef5deedef" tabindex="-1" value="">
                   </div>
 
-                  <input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="button">
+                  <input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="btn">
                   <div id="subscribe-result">
                   </div>
                 </div>

@@ -8,15 +8,11 @@
   align-items: center;
   padding: 115px 0px;
 
-  a {
+  .btn {
     color: white;
-    padding: 21px 47px;
-    border-radius: 8px;
     border: 2px solid white;
-    text-align: center;
     margin-top: 63px;
     @media (max-width: 680px) {
-    padding: 10px 30px;
       margin-top: 40px;
     }
   }

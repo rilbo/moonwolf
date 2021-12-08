@@ -25,9 +25,9 @@
             }
 
             .mc-field-group{
-               width: 653px;
+               
                display: flex;
-               flex-direction: row;
+              
                justify-content: space-between;
                margin-top: 53px;
                
@@ -63,18 +63,15 @@
                     color:white;
                   }
 
-                .button{
+                .btn{
+                    cursor:pointer;
                     border: 1px solid white;
-                    background-color: $main-color;
                     color: white;
-                    border-radius: 8px;
-                    padding: 10px 20px;
-
+                    background-color:$main-color;
                     @media (max-width: 600px){
-                        text-align: center;
                         width: 100px;
                         margin-top: 53px;
-                       }
+                    }
                  }
             }
         }

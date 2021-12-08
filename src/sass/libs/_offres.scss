@@ -67,12 +67,7 @@
     #btn__offres{
       margin-top:50px;
       color: white;
-      font-size:18px;
-      padding: 10px 20px;
       @include background_color($secondary-color);
-      @media (max-width: 768px) {
-        font-size:15px;
-      }
 
     }
 

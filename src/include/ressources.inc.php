@@ -6,5 +6,5 @@
       <br>N’attendez plus, entreprenez !
   </p>
 
-  <a href="#" id="btn__ressources" class="bts">Télécharger les fichiers</a>
+  <a href="#" id="btn__ressources" class="btn">Télécharger les fichiers</a>
 </section>
