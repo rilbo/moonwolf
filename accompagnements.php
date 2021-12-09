@@ -15,8 +15,9 @@
             <path id="Tracé_14" data-name="Tracé 14" d="M47.469,85.174h0a10.854,10.854,0,0,1,15.35,0m11.136-3.179a18.811,18.811,0,0,1-18.811,18.811h0A18.811,18.811,0,0,1,73.954,81.995ZM55.144,100.805A18.811,18.811,0,0,0,36.333,81.995a18.811,18.811,0,0,0,18.811,18.811ZM62.819,45.3h0a10.854,10.854,0,0,1-15.35,0M36.333,48.477a18.811,18.811,0,0,1,18.811-18.81A18.811,18.811,0,0,1,36.333,48.478Zm18.811-18.81A18.811,18.811,0,0,0,73.954,48.478h0A18.811,18.811,0,0,0,55.144,29.667Z" transform="translate(-28.877 -23.579)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
             <path id="Tracé_15" data-name="Tracé 15" d="M100.977,166.572a9.405,9.405,0,1,1-9.405-9.405A9.405,9.405,0,0,1,100.977,166.572Z" transform="translate(-65.305 -124.915)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>  
         </svg>
+        <p>Premier Pas</p>
       </a>
-      <p>Premier Pas</p>
+      
     </div>
 
     <div class="nav-btn">
