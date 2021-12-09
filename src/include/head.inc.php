@@ -28,6 +28,6 @@
   <meta name="twitter:description" content="Premier Pas est un dispositif qui propose 3 programmes d’accompagnement en ligne pour aider et inciter les femmes à entreprendre dans le secteur de l'innovation digitale." />
   <meta name="twitter:image" content="https://un-premier-pas.fr/assets/img/LOGO_TEXTE.jpg" />
   <meta name="twitter:url" content="https://un-premier-pas.fr" />
-  <link rel="stylesheet" href="assets/css/style.css?v=2" />
-  <script src="assets/js/main.js?v=2" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+  <script src="assets/js/main.js?v=3" defer></script>
 </head>

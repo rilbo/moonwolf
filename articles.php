@@ -84,7 +84,7 @@ include_once "./src/include/head.inc.php";
         <picture>
     </figure>
     <div class="first_view__text--center">
-        <h1>Découvrez les chiffres de l'année 2021 sur l'accopagnement féminin</h1>
+        <h1>Les 5 principaux problèmes au sein d’une entreprise</h1>
         <hr/>
     </div>
     <div class="mouse">

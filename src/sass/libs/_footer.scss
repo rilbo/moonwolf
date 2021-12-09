@@ -1,5 +1,5 @@
 footer {
-    padding: 60px;
+    padding: 60px 120px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -67,17 +67,7 @@ footer {
           }
       }
 
-    @media screen and (max-width : 1392px) {
-        >.content{
-            justify-content: space-between;
-        }
-
-        .copyright {
-            margin:0px;
-        }
-    }
-
-    @media screen and (max-width : 768px) {
+    @media screen and (max-width : 946px) {
         >.content{
             justify-content: center;
             flex-direction: column-reverse;
