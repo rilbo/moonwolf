@@ -8,3 +8,11 @@
 
   <a href="#" id="btn__ressources" class="btn">Télécharger les fichiers</a>
 </section>
+
+<script>
+  let btnRessources = document.getElementById("btn__ressources")
+  btnRessources.addEventListener("click", function(e) {
+    e.preventDefault()
+    window.open("/assets/php/script/scriptDownloadRessource.php", "_blank")
+  })
+</script>
