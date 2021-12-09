@@ -8,7 +8,7 @@
     <div class="copyright">
       <div>
         <div>
-          <h4>© Premier Pas - Espace presse</h4>
+          <h4>© Premier Pas - <a href="ressources/presse.pdf">Espace presse</a></h4>
           <hr />
         </div>
         <h5>
