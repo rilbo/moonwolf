@@ -1,6 +1,5 @@
 header {
   nav {
-    
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;
@@ -18,14 +17,18 @@ header {
     }
     .nav-logo {
       color: white;
-      display: flex;
-      align-items: center;
+      
       p{
         margin-left: 10px;
         font-size:15px;
       }
-      a svg path{
-        stroke:white;
+      a {
+        display: flex;
+        align-items: center;
+        color: white;
+        svg path{
+          stroke:white;
+        }
       }
     }
 
