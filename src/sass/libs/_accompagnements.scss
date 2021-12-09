@@ -1,8 +1,9 @@
 #div__accompagnements{
-    padding: 160px 120px;
-
+    padding: 0 120px;
+    padding-top: 160px;
     @media (max-width: 1200px){
-        padding: 174px 30px;
+        padding: 0 30px;
+        padding-top: 160px;
     }
     @media (max-width: 870px){
         padding: 0px;
