@@ -22,6 +22,7 @@
     > div{
       &:hover{
         background-color:$main-color;
+        @include transition();
         > div{
           svg path {
             stroke: white;
